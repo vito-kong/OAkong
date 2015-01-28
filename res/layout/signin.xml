@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    >
+    
+<FrameLayout
+            android:id="@+id/signin_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top" >
+
+            <ImageView
+                android:id="@+id/signin_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back" 
+                />
+
+            <TextView
+                android:id="@+id/signin_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:text="签到"
+                 />
+            
+                 <Button
+                android:id="@+id/signin_send"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ap_button_lightblue" 
+                android:text="发送"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+ </FrameLayout>
+ 
+		<TextView android:id="@+id/signin_location"
+		    	  android:layout_width="fill_parent"
+		    	  android:layout_height="40dp"
+		    	  android:layout_below="@id/signin_toolbar"
+		    	  android:gravity="center_vertical"
+		    	  android:textSize="15sp"
+		    	  android:textColor="@color/black"
+		    	  android:paddingLeft="10dp"
+		    	  android:text="定位中..."
+		    />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:id="@+id/signin_line"
+            android:layout_below="@id/signin_location"
+            android:background="#DBDBDB"
+             />
+        
+      <LinearLayout android:layout_width="fill_parent"
+         			android:layout_height="fill_parent"
+         			android:orientation="vertical" 
+         			android:layout_below="@id/signin_line"
+		          >
+	<EditText android:layout_width="fill_parent"
+	    	  android:layout_height="fill_parent"
+	    	  android:id="@+id/signin_edittext"
+	    	  android:gravity="top"
+	    	  android:padding="5dp"
+	    	  android:cursorVisible="true"
+	    	  android:background="@null"
+	    	  android:textColor="@color/black"
+	    	  android:singleLine="false"
+	    	  android:layout_weight="1"
+	    />
+        
+	<RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+              	
+              >
+
+                <ImageView
+                    android:id="@+id/signin_takepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="@dimen/distance_betweenbuttons"
+                    android:background="@drawable/ap_camera"
+                    android:gravity="center"
+                    
+                    android:textColor="@color/black" />
+
+               <ImageView
+                    android:id="@+id/signin_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="@dimen/distance_betweenbuttons"
+                    android:background="@drawable/ap_audio"
+                    android:gravity="center"
+                   
+                    android:textColor="@color/black" 
+                    android:layout_toRightOf="@id/signin_takepic"
+                    />
+
+               <ImageView
+                    android:id="@+id/signin_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="@dimen/distance_betweenbuttons"
+                    android:background="@drawable/ap_more"
+                    android:gravity="center"
+                    
+                    android:textColor="@color/black" 
+                     android:layout_toRightOf="@id/signin_record"
+                    />
+
+              <ImageView
+                  android:id="@+id/signin_keyboard"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:background="@drawable/ap_showkeyboard"
+                  android:gravity="center"
+                  android:textColor="@color/black"
+                  android:layout_marginRight="10dp"
+                   />
+
+              <TextView
+                  android:id="@+id/signin_attachment"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentTop="true"
+                  android:layout_toLeftOf="@+id/signin_keyboard"
+                  android:background="@drawable/ap_attachments"
+                  android:layout_marginRight="5dp"
+                  android:textColor="@color/white"
+                  android:textSize="15sp"
+                  android:text="0"
+                  android:gravity="center_vertical|right"
+                  android:paddingRight="15dp"
+                  />
+
+            </RelativeLayout>
+            </LinearLayout>  
+</RelativeLayout>

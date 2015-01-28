@@ -1,0 +1,62 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+     >
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top"
+        android:id="@+id/items_tubar"
+        >
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/lz_back"
+           
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/items_done"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/categoty_title"
+            android:maxWidth="200dp"
+            android:singleLine="true"
+            />
+        <Button android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="业务申请"
+            	android:layout_gravity="center_vertical|right"
+            	android:textSize="10sp"
+            	android:textColor="@color/white"
+            	android:id="@+id/send_flow"	
+            	android:background="@drawable/ap_dialog_ok"
+            	android:visibility="gone"
+            />
+        
+    </FrameLayout>
+    
+    <com.donggu.gzx.ui.PullToRefreshView 
+    android:id="@+id/category_pull_refresh_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:layout_below="@id/items_tubar"
+   >  
+    
+   <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       	android:id="@+id/categoty_list"
+       	android:divider="@android:color/transparent"
+       	android:descendantFocusability="blocksDescendants"
+        />
+   </com.donggu.gzx.ui.PullToRefreshView>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+      <FrameLayout
+            android:id="@+id/items_tubar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top" >
+
+            <ImageView
+                android:id="@+id/lz_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:id="@+id/search_keyword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:singleLine="true"
+              
+                 />
+        </FrameLayout>
+
+    <com.donggu.gzx.ui.PullToRefreshView 
+    android:id="@+id/search_pull_refresh_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:layout_below="@id/items_tubar"
+    android:background="@color/white"
+    >  
+	 <ListView android:layout_width="fill_parent"
+            	  android:layout_height="fill_parent"
+            	  android:id="@+id/search_list"
+            	  android:cacheColorHint="#00000000"
+            	  
+           />
+          </com.donggu.gzx.ui.PullToRefreshView>
+       
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+     >
+	<ImageView android:id="@+id/doc_list_image"
+	    	 android:layout_width="50dp"
+	    	 android:layout_height="50dp"
+	    	 android:layout_margin="10dp"
+	    />
+    <TextView
+        android:id="@+id/doc_list_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:text="hello world"
+        android:layout_toRightOf="@id/doc_list_image"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/doc_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#B5B5B5"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="hello world"
+        android:layout_toRightOf="@id/doc_list_image"
+        android:layout_below="@id/doc_list_text"
+        android:singleLine="true"
+        />
+    <ImageView android:id="@+id/search_arrow"
+	    	 android:layout_width="wrap_content"
+	    	 android:layout_height="wrap_content"
+	    	 android:background="@drawable/arrow"
+	    	 android:layout_margin="10dp"
+	    	 android:layout_alignParentRight="true"
+	    />
+ 	 <TextView 
+       		android:layout_width="fill_parent"
+       		android:layout_height="1dp"
+       		android:background="#CCC"
+  	   		android:id="@+id/line"
+  	   		android:layout_alignParentBottom="true"	
+       />
+</RelativeLayout>

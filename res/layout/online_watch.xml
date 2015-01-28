@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"   
+    >
+    
+    <include
+        android:id="@+id/online_watch_title"
+        layout="@layout/title_layout" />
+    <WebView 
+        	 android:layout_width="fill_parent"
+        	 android:layout_height="fill_parent"
+        	 android:scrollbars="horizontal|vertical"
+        	 android:id="@+id/online_webview"
+        	 android:fitsSystemWindows="true"
+        	android:layout_below="@id/online_watch_title"
+        />
+  
+</RelativeLayout>

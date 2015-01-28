@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/qrcode_title"
+        layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/qrcode_address_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrcode_title"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="二维码地址" 
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/qrcode_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrcode_address_text"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="http://oa.cdmetro.cn:30005/install.html" 
+         android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/qrcode_descrption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="扫描二维码下载APP" 
+         android:textColor="@color/black"
+         />
+
+    <ImageView
+        android:id="@+id/qrcode_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/qrcode_descrption"
+        android:layout_below="@id/qrcode_address"
+        android:padding="20dp"
+        android:scaleType="fitCenter" 
+        android:src="@drawable/qrcode"
+        />
+
+</RelativeLayout>

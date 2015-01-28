@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:gravity="center_vertical" 
+android:id="@+id/buttonPanel" 
+android:orientation="horizontal"
+android:background="@drawable/menu_bg"
+android:layout_width="fill_parent" 
+android:layout_height="60dp" 
+android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  >
+  <RelativeLayout
+   android:layout_width="0.0dip" 
+   android:layout_height="60dp" 
+   android:id="@+id/tab_contact"
+   android:layout_weight="1.0"
+   android:padding="2.0dip">
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" 
+        android:id="@+id/tab_contact_t"
+        style="@style/maintab_bottom_t"
+        android:text="主页"/>
+         <ImageView    
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab_contact_t"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tab_contact_i"
+        />   
+   </RelativeLayout> 
+   <RelativeLayout
+   android:layout_width="0.0dip" 
+   android:layout_height="60.0dip" 
+   android:id="@+id/tab_setting"
+   android:layout_weight="1.0"
+   android:padding="2.0dip">
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" 
+        style="@style/maintab_bottom_t"
+		android:text="设置"
+        android:id="@+id/tab_settting_t"/>
+
+        <ImageView    
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab_settting_t"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tab_setting_i"
+        />   
+   </RelativeLayout>
+   
+  
+   <RelativeLayout
+   android:layout_width="0.0dip" 
+   android:layout_height="60dp" 
+   android:id="@+id/tab_dial"
+   android:layout_weight="1.0"
+   android:padding="2.0dip"
+   android:visibility="gone"
+   >
+    	<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/maintab_bottom_t"
+        android:textColor="@android:color/white" 
+        android:id="@+id/tab_dail_t"
+        android:text="消息"/>
+        <ImageView    
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab_dail_t"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tab_dail_i"
+        />   
+      
+   </RelativeLayout> 
+   <RelativeLayout
+   android:layout_width="0.0dip" 
+   android:layout_height="60.0dip" 
+   android:id="@+id/tab_message"
+   android:layout_weight="1.0"
+   android:padding="2.0dip"
+   android:visibility="gone"
+   >
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" 
+        style="@style/maintab_bottom_t"
+        android:id="@+id/tab_message_t"
+        android:text="搜索"/>
+        <ImageView    
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tab_message_t"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tab_message_i"
+        /> 
+   </RelativeLayout> 
+   
+</LinearLayout>

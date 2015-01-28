@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttonPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="42dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/tab_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/tab_contact"
+        android:layout_width="0.0dip"
+        android:layout_height="42dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_on"
+        android:padding="2.0dip" >
+
+        <TextView
+            android:id="@+id/tab_contact_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="表单"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_contact_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_contact_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_form"
+        android:layout_width="0.0dip"
+        android:layout_height="42dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_down"
+        android:padding="2.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tab_form_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="正文"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_form_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_form_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_dial"
+        android:layout_width="0.0dip"
+        android:layout_height="42dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_down"
+        android:padding="2.0dip" >
+
+        <TextView
+            android:id="@+id/tab_dail_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="流程附件"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_dail_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_dail_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_message"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_down"
+        android:padding="2.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tab_message_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="协同关联"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_message_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_message_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_setting"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_down"
+        android:padding="2.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tab_settting_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="补充说明"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_setting_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_settting_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_diagram"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_down"
+        android:padding="2.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tab_diagram_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="流程图"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_diagram_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_diagram_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_approval"
+        android:layout_width="0.0dip"
+        android:layout_height="42.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/tab_down"
+        android:padding="2.0dip" >
+
+        <TextView
+            android:id="@+id/tab_approval_t"
+            style="@style/maintab_bottom_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="审批记录"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/tab_approval_i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_approval_t"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

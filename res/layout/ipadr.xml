@@ -1,0 +1,17 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/address_relative"		
+    >
+
+    <EditText android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:textColor="@android:color/black"
+        	android:layout_margin="10dp"
+        	android:id="@+id/edit_host"	
+        	android:text=""
+        	android:layout_centerVertical="true"
+        />
+    </RelativeLayout>

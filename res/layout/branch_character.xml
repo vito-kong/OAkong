@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/items_tubar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top" >
+
+         <TextView
+            android:id="@+id/categoty_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" 
+           	android:paddingLeft="40dp"
+           	android:paddingRight="70dp"
+            />
+         
+        <ImageView
+            android:id="@+id/lz_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+       
+        
+        <Button android:layout_width="60dp"
+            	android:layout_height="30dp"
+            	android:layout_gravity="right|center_vertical"
+            	android:layout_marginRight="5dp"
+            	android:text="保存"
+            	android:textColor="@color/white"
+            	android:gravity="center"
+            	android:textSize="12sp"	
+            	android:id="@+id/role_saved"
+            	android:background="@drawable/ap_dialog_ok"
+            />
+    </FrameLayout>
+    
+     <com.dynastech.cdmetro.ui.AmazingListView
+        android:id="@+id/branchSection"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/items_tubar"
+        android:divider="#00000000"
+        android:scrollbars="none"
+        android:background="#FFFFFF"
+         />
+    
+</RelativeLayout>

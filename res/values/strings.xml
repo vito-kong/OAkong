@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="vitamio_demo_name">VitamioDemo</string>
+	<string name="local_video">Play Video from Local File</string>
+    <string name="stream_video">Play Streaming Video</string>
+    <string name="local_audio">Play Audio from Local File</string>
+    <string name="res_audio">Play Audio from Resources</string>
+    <string name="title_activity_video_subtitle_demo">VideoSubtitleDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="subtitle1">MediaPlayer  Subtitles</string>
+    <string name="subtitle12">VideoView Subtitles</string>
+    <string name="title_activity_media_player_subtitle">MediaPlayerSubtitle</string>
+    <string name="title_activity_video_view_subtitle">VideoViewSubtitle</string>
+    <string name="title_activity_video_subtitle_list">VideoSubtitleList</string>
+    <string name="title_activity_video_buffer">VideoBuffer</string>
+    
+    
+    <string name="vitamio_library_app_name">VitamioLibrary</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="permission_group_tools_label">Vitamio tools</string>
+    <string name="permission_group_tools_description">Access Vitamio package and resources.</string>
+    <string name="permission_receive_messages_label">Receive Vitamio messages</string>
+    <string name="permission_receive_messages_description">Receive all broadcasts from Vitamio service.</string>
+    <string name="permission_write_providers_label">Write Vitamio providers</string>
+    <string name="permission_write_providers_description">Delete, update or create new items in Vitamio providers.
+    </string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+        this device.
+    </string>
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    
+    <string name="app_name">OA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="username">用户名:</string>
+    <string name="passoword">密码:</string>
+    <string name="login">登录</string>
+    <string name="ipaddr">http://oa.dynastech.com:8000</string>
+    <string name="domain">http://oa.dynastech.com:8000/mobile/index.ashx?</string>
+    <string name="validate">加载中...</string>
+    <string name="home">Go home</string>
+    <string name="new_fragment">New fragment</string>
+    <string name="fragment_tabs_pager">Fragment/Tabs and Pager</string>
+    <string name="fragment_stack_support">Fragment/Stack</string>
+    <string name="loader_cursor_support">Loader/Cursor</string>
+    <string name="loader_custom_support">Loader/Custom</string>
+    <string name="loader_throttle_support">Loader/Throttle</string>
+    <string name="search">搜索</string>
+    <string name="packagename">com.donggu.actpoint</string>
+    <string name="item_undo">待办事项</string>
+    <string name="item_do">已办事项</string>
+    <string name="item_menu">菜单</string>
+    <string name="main_tab">主页</string>
+    <string name="datanull">没有可用数据</string>
+    <string name="logout">注销</string>
+    <string name="searchnull">没有数据</string>
+    <string name="logo_text">统一协同办公系统</string>
+	<string name="attachs_play">打开</string>
+	<string name="attachs_download">下载</string>
+	<string name="attachs_delete">删除</string>
+	
+    <string-array name="menu">
+        <item>待办事项</item>
+        <item>已办事项</item>
+        <item>注销登录</item>
+    </string-array>
+
+    <string name="ani_time">250</string>
+    <string name="ani_time2">500</string>
+    <string name="ani_timestartof">150</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">释放刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新...</string>
+    <string name="items_done">批事项</string>
+    <string name="note_pull_down">下拉可以刷新&#8230;</string>
+    <string name="note_pull_refresh">松开即可刷新&#8230;</string>
+    <string name="note_pull_loading">加载中&#8230;</string>
+    <string name="note_update_at">更新于：%1$s</string>
+    <string name="note_not_update">尚未更新</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="title_activity_adidas">Adidas</string>
+
+    <!-- General strings -->
+	<string name="attach_see">查看</string>
+	<string name="attach_delete">删除</string>
+	<string name="attach_download">下载</string>
+	<string name="attach_cancel">取消</string>
+	<string name="attach_pause">暂停</string>
+	<string name="attach_begin">开始</string>
+    <!-- title for the dialog showing the error of camera hardware -->
+    <string name="camera_error_title">Camera error</string>
+
+    <!-- message for the dialog showing the error of camera hardware -->
+    <string name="cannot_connect_camera">Cannot connect to camera.</string>
+
+    <!-- label for the icon meaning 'show me all the images that were taken with the camera' -->
+    <string name="camera_label">Camera</string>
+
+    <!-- label for the 'video recording application shown in the top level 'all applications' -->
+    <string name="video_camera_label">Camcorder</string>
+
+    <!-- label for the folder that contains Camera pictures in the gallery -->
+    <string name="gallery_camera_bucket_name">Camera pictures</string>
+
+    <!-- label for the folder that contains Camera videos in the gallery -->
+    <string name="gallery_camera_videos_bucket_name">Camera videos</string>
+
+    <!-- alert to the user to wait for some operation to complete -->
+    <string name="wait">Please wait\u2026</string>
+
+    <!-- alert to the user that USB storage must be available before using the camera [CHAR LIMIT=NONE] -->
+    <string name="no_storage" product="nosdcard">Please mount USB storage before using the camera.</string>
+    <!-- alert to the user that an SD card must be installed before using the camera -->
+    <string name="no_storage" product="default">Please insert an SD card before using the camera.</string>
+
+    <!-- alert to the user that the USB storage is too full to complete the operation [CHAR LIMIT=NONE] -->
+    <string name="not_enough_space" product="nosdcard">Your USB storage is full.</string>
+    <!-- alert to the user that the SD card is too full to complete the operation -->
+    <string name="not_enough_space" product="default">Your SD card is full.</string>
+
+    <!-- alert to the user that the USB storage is being disk-checked [CHAR LIMIT=30] -->
+    <string name="preparing_sd" product="nosdcard">Preparing USB storage\u2026</string>
+    <!-- alert to the user that the SD card is being disk-checked -->
+    <string name="preparing_sd" product="default">Preparing SD card\u2026</string>
+
+    <!-- alert to the user that the camera fails to read or write the USB storage. [CHAR LIMIT=NONE] -->
+    <string name="access_sd_fail" product="nosdcard">Failed to access USB storage.</string>
+    <!-- alert to the user that the camera fails to read or write the SD card. -->
+    <string name="access_sd_fail" product="default">Fail to access SD card.</string>
+
+    <!-- Settings stuff -->
+
+
+    <!-- Menu items: -->
+    <!-- menu pick to go to the settings screen -->
+
+
+    <!-- menu pick to view the details of the currently selected image -->
+
+
+    <!-- menu pick to show the location of the currently selected image on maps -->
+
+
+    <!-- menu pick to rotate the currently selected image (brings up submenu) -->
+
+
+    <!-- menu pick to rotate the currently selected image to the left -->
+
+
+    <!-- menu pick to rotate the currently selected image to the right -->
+
+
+    <!-- Confirmation dialog title after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a picture -->
+    <!-- Confirmation dialog message after deleting a video -->
+
+
+    <!-- Confirmation dialog when restoring settings -->
+    <string name="confirm_restore_title">Restore defaults</string>
+    <string name="confirm_restore_message">Camera settings will be restored to defaults.</string>
+
+    <!-- button in review mode indicating that the video just taken should be played -->
+    <string name="review_play">PLAY</string>
+
+    <!-- button in review mode indicating that the video recording session should be canceled -->
+    <string name="review_cancel">CANCEL</string>
+
+    <!-- button in review mode indicating that the taken video is OK to be attached/uploaded -->
+    <string name="review_ok">OK</string>
+
+    <!-- button in review mode indicate the user want to retake another picture for attachment -->
+    <string name="review_retake">RETAKE</string>
+
+    <!-- button indicating that the picture just taken should be deleted -->
+
+
+    <!-- button indicating that the picture just taken should be shared by email, mms, etc -->
+
+
+    <!-- button indicating that the picture just taken should be set as a contact photo, wallpaper, etc -->
+
+
+    <!-- button indicating that the picture just taken should be cropped -->
+
+
+    <!-- Toast after trying to share a picture indicating that there are no applications which are capable of so doing. -->
+
+
+    <!-- Toast after trying to share a video indicating that there are no applications which are capable of so doing. -->
+
+
+    <!-- Menu item for playing the video. -->
+
+
+    <!-- Button indicating to go to the image gallery -->
+    <string name="camera_gallery_photos_text">Gallery</string>
+
+    <!-- Button indicating to switch to another camera -->
+    <string name="switch_camera_id">Switch Camera</string>
+
+    <!-- Settings screen, camera selection dialog title. Users can select a camera from the phone (front-facing or back-facing). [CHAR LIMIT=20] -->
+    <string name="pref_camera_id_title">Select camera</string>
+    <string name="pref_camera_id_default" translatable="false">0</string>
+
+    <!-- In select camera setting, back facing camera. [CHAR LIMIT=14] -->
+    <string name="pref_camera_id_entry_back">Back</string>
+    <!-- In select camera setting, front-facing camera. [CHAR LIMIT=14] -->
+    <string name="pref_camera_id_entry_front">Front</string>
+
+    <!-- Settings screen, setting title text -->
+    <string name="pref_camera_recordlocation_title">Store location</string>
+    <string name="pref_camera_recordlocation_default" translatable="false">none</string>
+
+    <!-- Settings screen, Record location dialog choices -->
+    <string name="pref_camera_recordlocation_entry_off">Off</string>
+    <string name="pref_camera_recordlocation_entry_on">On</string>
+
+    <!-- The Video length settings in preference -->
+    <string name="pref_video_quality_title">Video quality</string>
+    <string name="pref_video_quality_default" translatable="false">high</string>
+    <string name="pref_video_quality_entry_high">High (30m)</string>
+    <string name="pref_video_quality_entry_low">Low (30m)</string>
+    <string name="pref_video_quality_entry_mms">MMS (Low, 30s)</string>
+    <string name="pref_video_quality_entry_youtube">YouTube (High, 10m)</string>
+
+    <!-- Settings screen, Camera setting category title -->
+    <string name="pref_camera_settings_category">Camera settings</string>
+
+    <!-- Settings screen, Camcorder setting category title -->
+    <string name="pref_camcorder_settings_category">Camcorder settings</string>
+
+    <!-- Settings screen, Picture size title -->
+    <string name="pref_camera_picturesize_title">Picture size</string>
+
+    <!-- Settings screen, Picture size dialog radio button choices -->
+    <string name="pref_camera_picturesize_entry_2592x1936">5M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">2M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1024x768">1M Pixels</string>
+    <string name="pref_camera_picturesize_entry_640x480" translatable="false">VGA</string>
+    <string name="pref_camera_picturesize_entry_320x240" translatable="false">QVGA</string>
+
+    <!--
+         Default picture quality setting. See
+         pref_camera_jpegquality_entryvalues for possible values
+    -->
+    <string name="pref_camera_jpegquality_default" translatable="false">superfine</string>
+
+    <!-- Settings screen, Picture quality title -->
+    <string name="pref_camera_jpegquality_title">Picture quality</string>
+
+    <!-- Settings screen, Picture quality dialog radio button choices -->
+    <string name="pref_camera_jpegquality_entry_superfine">Super fine</string>
+    <string name="pref_camera_jpegquality_entry_fine">Fine</string>
+    <string name="pref_camera_jpegquality_entry_normal">Normal</string>
+
+    <!-- Default focus mode setting. -->
+    <string name="pref_camera_focusmode_default" translatable="false">auto</string>
+
+    <!-- Settings screen, Focus mode title -->
+    <string name="pref_camera_focusmode_title">Focus mode</string>
+
+    <!-- Settings screen, Focue mode dialog radio button choices -->
+    <string name="pref_camera_focusmode_entry_auto">Auto</string>
+    <string name="pref_camera_focusmode_entry_infinity">Infinity</string>
+    <string name="pref_camera_focusmode_entry_macro">Macro</string>
+
+    <!-- Default flash mode setting. -->
+    <string name="pref_camera_flashmode_default" translatable="false">auto</string>
+
+    <!-- Value for flash off setting -->
+    <string name="pref_camera_flashmode_no_flash" translatable="false">no_flash</string>
+
+    <!-- Settings screen, Flash mode title -->
+    <string name="pref_camera_flashmode_title">Flash mode</string>
+
+    <!-- Settings screen, Flash mode dialog radio button choices -->
+    <string name="pref_camera_flashmode_entry_auto">Auto</string>
+    <string name="pref_camera_flashmode_entry_on">On</string>
+    <string name="pref_camera_flashmode_entry_off">Off</string>
+
+    <!-- Default videocamera flash mode setting. -->
+    <string name="pref_camera_video_flashmode_default" translatable="false">off</string>
+
+    <!-- Default white balance setting. -->
+    <string name="pref_camera_whitebalance_default" translatable="false">auto</string>
+
+    <!-- Settings screen, white balance title -->
+    <string name="pref_camera_whitebalance_title">White balance</string>
+
+    <!-- Settings screen, White balance dialog radio button choices -->
+    <string name="pref_camera_whitebalance_entry_auto">Auto</string>
+    <string name="pref_camera_whitebalance_entry_incandescent">Incandescent</string>
+    <string name="pref_camera_whitebalance_entry_daylight">Daylight</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent">Fluorescent</string>
+    <string name="pref_camera_whitebalance_entry_cloudy">Cloudy</string>
+
+    <!-- Default color effect setting. -->
+    <string name="pref_camera_coloreffect_default" translatable="false">none</string>
+
+    <!-- Settings screen, Select Color effect title -->
+    <string name="pref_camera_coloreffect_title">Color effect</string>
+
+    <!-- Settings screen, Color effect dialog radio button choices -->
+    <string name="pref_camera_coloreffect_entry_none">None</string>
+    <string name="pref_camera_coloreffect_entry_mono">Mono</string>
+    <string name="pref_camera_coloreffect_entry_sepia">Sepia</string>
+    <string name="pref_camera_coloreffect_entry_negative">Negative</string>
+    <!-- Color effect that overexposes and reverses some of the tones. -->
+    <string name="pref_camera_coloreffect_entry_solarize">Solarize</string>
+    <string name="pref_camera_coloreffect_entry_posterize">Posterize</string>
+    <string name="pref_camera_coloreffect_entry_aqua">Aqua</string>
+    <string name="pref_camera_coloreffect_entry_pastel">Pastel</string>
+    <string name="pref_camera_coloreffect_entry_mosaic">Mosaic</string>
+    <string name="pref_camera_coloreffect_entry_redtint">Red tint</string>
+    <string name="pref_camera_coloreffect_entry_bluetint">Blue tint</string>
+    <string name="pref_camera_coloreffect_entry_greentint">Green tint</string>
+
+    <!-- Default scene mode setting. -->
+    <string name="pref_camera_scenemode_default" translatable="false">auto</string>
+
+    <!-- Settings screen, Select Scene mode -->
+    <string name="pref_camera_scenemode_title">Scene mode</string>
+
+    <!-- Settings menu, scene mode choices -->
+    <string name="pref_camera_scenemode_entry_auto">Auto</string>
+    <!-- Scene mode that takes an image quickly with little motion blur. -->
+    <string name="pref_camera_scenemode_entry_action">Action</string>
+    <!-- Scene mode that takes an image with as little noise as possible so details of the subject are maintained. -->
+    <string name="pref_camera_scenemode_entry_portrait">Portrait</string>
+    <!-- Scene mode that takes an image of a landscape assuming all subjects are relatively far from the phone. -->
+    <string name="pref_camera_scenemode_entry_landscape">Landscape</string>
+    <!-- Scene mode that takes long exposures to capture night scenes without flash. -->
+    <string name="pref_camera_scenemode_entry_night">Night</string>
+    <!-- Scene mode that takes night shots with long exposure and flash to illuminate the subject while still capturing darker detail in the background. -->
+    <string name="pref_camera_scenemode_entry_night_portrait">Night portrait</string>
+    <!-- Scene mode to be used in a stage show. -->
+    <string name="pref_camera_scenemode_entry_theatre">Theatre</string>
+    <!-- Scene mode optimized for taking images on the beach. -->
+    <string name="pref_camera_scenemode_entry_beach">Beach</string>
+    <!-- Scene mode optimized for taking images in the snow. -->
+    <string name="pref_camera_scenemode_entry_snow">Snow</string>
+    <!-- Scene mode optimized for taking images in the sunset. -->
+    <string name="pref_camera_scenemode_entry_sunset">Sunset</string>
+    <!-- Scene mode for taking a photo as sharp as possible. -->
+    <string name="pref_camera_scenemode_entry_steadyphoto">Steady photo</string>
+    <!-- Scene mode optimized for taking images of fireworks. -->
+    <string name="pref_camera_scenemode_entry_fireworks">Fireworks</string>
+    <!-- Scene mode optimized for taking indoor low-lights pictures. [CHAR LIMIT=16] -->
+    <string name="pref_camera_scenemode_entry_party">Party</string>
+    <!-- Scene mode optimized for capturing the naturally warm color of scenes lit by candles. [CHAR LIMIT=16] -->
+    <string name="pref_camera_scenemode_entry_candlelight">Candlelight</string>
+
+    <!-- Restore settings item in preference -->
+    <string name="pref_restore_title">Camera settings</string>
+    <string name="pref_restore_detail">Restore defaults</string>
+
+    <!-- Exposure settings in preference -->
+    <string name="pref_exposure_title">Exposure</string>
+    <string name="pref_exposure_default" translatable="false">0</string>
+
+    <!-- Framing grid settings in preference -->
+
+
+    <!-- Message to show when there's no lat/lng information in the image -->
+    <!-- Title of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+    <!-- Label in message of Details dialog -->
+
+
+    <!-- Used to format image dimensions in Details dialog. e.g. 64 x 64 -->
+    <!-- Used to format short video duration in Details dialog. minutes:seconds e.g. 00:30 -->
+    <!-- Used to format video duration in Details dialog. hours:minutes:seconds e.g. 0:21:30 -->
+    <!-- Unit of measure in the Details dialog frames per second. e.g. 20 fps -->
+    <!-- Unit of measure in the Details dialog K bits per second. e.g. 192 Kbps -->
+    <!-- Unit of measure in the Details dialog M bits per second. e.g. 2.3 Mbps -->
+    <!-- Details dialog "OK" button. Dismisses dialog. -->
+    <string name="details_ok">OK</string>
+
+    <!--
+         Displayed in the title of the dialog for things to do with a picture that
+         is to be sent to another application:
+    -->
+
+
+    <!--
+         Displayed in the title of the dialog for things to do with a picture that
+         is to be "set as" (e.g. set as contact photo or set as wallpaper)
+    -->
+
+
+    <!--
+         Displayed in the title of the dialog for things to do with a video that
+         is to be sent to another application.
+    -->
+
+
+    <!-- Low-memory dialog message [CHAR LIMT=NONE] -->
+    <string name="spaceIsLow_content" product="nosdcard">Your USB storage is running out of space. Change the quality setting or delete some images or other files.</string>
+    <!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
+    <string name="spaceIsLow_content" product="default">Your SD card is running out of space. Change the quality setting or delete some images or other files.</string>
+
+    <!-- Camera format string for new image files. Passed to java.text.SimpleDateFormat. -->
+    <string name="image_file_name_format" translatable="false">"'IMG'_yyyyMMdd_HHmmss"</string>
+
+    <!-- Video Camera format string for new video files. Passed to java.text.SimpleDateFormat. -->
+    <string name="video_file_name_format" translatable="false">"'VID'_yyyyMMdd_HHmmss"</string>
+
+    <!-- The messsage shown when video record reaches size limit. -->
+    <string name="video_reach_size_limit">Size limit reached.</string>
+
+    <!-- The title show on the zoom controller -->
+    <string name="zoom_control_title">Zoom</string>
+    <string name="switch_to_camera_lable">Switch to camera</string>
+    <string name="switch_to_video_lable">Switch to video</string>
+
+    <string name="app_description">This is a sample application for the Android Training class
+        &quot;Displaying Bitmaps Efficiently&quot;
+        (http://developer.android.com/training/displaying-bitmaps/display-bitmap.html). It is not
+        designed to be a full reference application but to demonstrate the concepts discussed in
+        training course.</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    
+    <string name="imagesdcardcache_demo_activity_title">ImageSDCardCache Demo</string>
+    <string name="imagecache_demo_activity_title">ImageCache Demo</string>
+    <string name="dropdownlistview_demo_activity_title">Drop Down And Load More ListView Demo</string>
+    <string name="borderscrollview_demo_activity_title">onBottom onTop ScrollView Demo</string>
+    <string name="search_view_demo_activity_title">SearchView Demo</string>
+    <string name="download_manager_demo_activity_title">DownloadManager Demo</string>
+    <string name="slide_one_page_gallery_demo_activity_title">Slide One Page Gallery Demo</string>
+    <string name="view_pager_demo_activity_title">ViewPager Demo</string>
+    <string name="view_pager_multi_fragment_demo_activity_title">ViewPager Multi Fragment Demo</string>
+    <string name="intent_demo_activity_title">Intent Demo</string>
+    <string name="service_demo_activity_title">Service Demo</string>
+    <string name="broadcastreceiver_demo_activity_title">BroadcastReceiver Demo</string>
+        
+    <string name="send_general_broadcast">send general broadcast</string>
+    <string name="send_local_broadcast">send local broadcast</string>
+    <string name="send_ordered_broadcast">send ordered broadcast</string>
+    <string name="send_sticky_broadcast">send sticky broadcast</string>
+        
+    <string name="start_general_service">start general service</string>
+    <string name="stop_general_service">stop_general service</string>
+    <string name="start_intent_service">start intent service</string>
+    <string name="bound_service">bound service</string>
+    <string name="operate_bound_service">operate_bound service</string>
+    <string name="get_bound_service_pro">get bound service pro</string>
+    <string name="unbound_service">unbound service</string>
+    <string name="start_aidl_service">start aidl service</string>
+    <string name="stop_aidl_service">stop aidl service</string>
+    
+    <string name="app_status_download">click to download</string>
+    <string name="app_status_downloaded">downloaded, click to download again</string>
+    <string name="app_status_download_fail">download fail, click to download again</string>
+    <string name="progress_tip">download tip:</string>
+    <string name="download_notification_title">MeiLiShuo</string>
+    <string name="download_begin">begin Download</string>
+    <string name="download_fail">download Fail</string>
+    <string name="app_status_pending">download Peding</string>
+    <string name="app_status_pause">Pause</string>
+    <string name="app_status_downloading">downloading</string>
+    <string name="tip_download_file">file will be saved to sdcard, the path is: </string>
+
+    <string name="update_at">updated at:&#160;</string>
+    
+    <string name="profile">Profile:&#160;</string>
+    <string name="description">Description:&#160;</string>
+        
+    <string name="desc_search_view">SearchView Desc And Implement Search Tip</string>
+    <string name="desc_view_pager_multi_page">Viewpager With Multi Page</string>
+    <string name="desc_download_manager">Download Manager Usage</string>
+    <string name="desc_slide_gallery">Slide One Page Gallery Usage</string>
+    <string name="desc_view_pager">ViewPager And Fragment Usage</string>
+    <string name="desc_service">Android Service Usage</string>
+    <string name="desc_broadcast_receiver">Android BroadcastReceiver Usage</string>
+    <string name="desc_border_scroll_view">BorderScrollView Usage</string>
+    <string name="desc_drop_down_listview">Drop Down And On Bottom Listview</string>
+    <string name="desc_image_cache">ImageCache Usage</string>
+    <string name="desc_image_sdcard_cache">ImageSDCardCache Usage</string>
+    <string name="desc_default">Trinea</string>
+    
+        <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
+    <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
+    <string name="drop_down_list_header_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_default_text">More</string>
+    <string name="drop_down_list_footer_loading_text">Loading&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">No More</string>
+    
+    <string name="image_content">Image</string>
+    
+    
+  
+    <string name="histogram">Histogram</string>
+    <string name="grayscale">Grayscale</string>
+    <string name="threshhold">Threshold</string>
+    <string name="mosaic">Mosaic</string>
+    <string name="sepia">Sepia</string>
+    <string name="filter">Filter</string>
+    <string name="contour">Contour</string>
+    <string name="original">Original</string>
+    
+   
+
+    <string name="hello">Hello World, PullToRefreshActivity!</string>
+    <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris varius lacus porttitor eget blandit massa facilisis. Nulla pellentesque odio sed purus fermentum vitae viverra orci faucibus. Sed ullamcorper condimentum vulputate. Curabitur sit amet convallis velit. Vestibulum posuere eleifend risus ac adipiscing. Nam pulvinar nulla a velit faucibus imperdiet. Praesent eget nisi ac justo blandit sagittis. Maecenas at leo nisi, nec varius nisl.\nIn hac habitasse platea dictumst. Morbi neque tortor, vestibulum sed viverra a, luctus vel lorem. Nunc turpis eros, varius eget commodo et, euismod at eros. Sed tincidunt mi purus, vel posuere dui. Vestibulum ante lectus, porta sed mattis bibendum, scelerisque cursus sapien. Cras ultrices imperdiet fermentum. Aenean nisi nulla, euismod non blandit ac, dictum quis libero. Morbi consectetur tempor mollis. Suspendisse eget nunc arcu, vel ullamcorper augue. Integer malesuada, diam nec faucibus mollis, nisl velit euismod enim, ac mattis justo neque sit amet mauris. Vivamus pretium imperdiet pharetra.\nInteger sagittis augue sit amet lectus pulvinar sit amet commodo tortor mattis. Maecenas quis tellus eget ante eleifend sollicitudin non et nibh. Maecenas luctus euismod tristique. Fusce in odio nec diam blandit facilisis. Sed nec arcu eros. Vivamus quis tortor a metus tempus aliquam eget volutpat magna. Pellentesque id ultrices dolor. Sed blandit aliquet quam. Phasellus dapibus euismod vulputate. Aenean blandit, elit vitae vestibulum tincidunt, metus dui accumsan nulla, sit amet vehicula mauris lacus in est. Etiam dignissim pellentesque nulla vel malesuada. Cras vel lorem justo.\nSed condimentum nisl sit amet libero vestibulum hendrerit. Duis auctor tempus placerat. Proin velit ante, ornare nec dictum nec, hendrerit eu arcu. Etiam ut diam ornare quam venenatis pulvinar vitae vel leo. Vivamus consectetur, ante id interdum rhoncus, magna eros pulvinar lacus, a gravida nibh arcu vitae eros. Nulla scelerisque laoreet feugiat. Mauris sit amet gravida felis.\nNulla ac dolor sapien, vestibulum venenatis justo. Cras placerat velit vitae nibh pellentesque ultricies. Suspendisse adipiscing enim eu justo iaculis eu pretium urna fermentum. Duis porttitor nunc non nunc mattis vestibulum. Etiam elit tellus, feugiat in bibendum eget, adipiscing nec metus. Ut ut sem lacus, quis faucibus diam. Curabitur a nulla fermentum tortor dignissim posuere. Fusce faucibus ante ut sem imperdiet imperdiet eget vitae lorem. Etiam fringilla ornare ipsum, in sagittis quam ornare vitae. Nullam venenatis orci sit amet sapien adipiscing gravida. Proin turpis lectus, hendrerit vitae vehicula ut, auctor ac lectus. Pellentesque sollicitudin blandit ligula quis commodo. Mauris vulputate lectus in velit luctus aliquam. Quisque eget tincidunt elit. Quisque et augue quam, sed scelerisque eros.</string>
+
+</resources>

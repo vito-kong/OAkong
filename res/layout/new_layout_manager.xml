@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tubar"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/linercontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tubar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/form_title"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/tab_title"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/form_origantor"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/tab_bg"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/new_form"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_on"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="表单信息"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/new_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_down"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="正文"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/new_attachment"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_down"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="查看附件"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/new_approval"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_down"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="审批日志"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/new_todo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/login_normal"
+                android:gravity="center"
+                android:text="处理"
+                android:textColor="@android:color/white" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/new_todo" >
+
+                <include
+                    layout="@layout/new_attachment"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/new_approval_list"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/webview_text"
+                    android:visibility="gone" />
+
+                <include layout="@layout/webview" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/hide"
+        android:visibility="gone" />
+
+</RelativeLayout>

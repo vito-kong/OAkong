@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/button_up_bg"
+    android:orientation="vertical" 
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/toolsbackground"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tool_camera"
+                android:layout_width="fill_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/dotool_camera" />
+
+            <Button
+                android:id="@+id/tool_video"
+                android:layout_width="fill_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/dotool_video" />
+
+            <Button
+                android:id="@+id/tool_picture"
+                android:layout_width="fill_parent"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/dotool_picture" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_control"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ap_hidedo" />
+
+        <TextView
+            android:id="@+id/tool_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:background="@drawable/doattachments"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="+0"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_audio"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dotool_audio" />
+
+        <EditText
+            android:id="@+id/layout_content_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/favorite_login_editor_disselect"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" >
+
+        <TextView
+            android:id="@+id/reject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_back"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="回退"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/terminal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_terminal"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="中止"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/revocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_readed"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="撤销"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/approval"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_approval"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/no_approval"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_no_approvall"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="不同意"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

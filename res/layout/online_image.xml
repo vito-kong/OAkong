@@ -21,7 +21,7 @@
             android:contentDescription="@string/image_content"
             android:scaleType="fitCenter" />
 
-        <com.dynastech.cdmetro.newui.widget.RoundProgressBar
+        <com.dynastech.oa.ui.widget.RoundProgressBar
             android:id="@+id/roundProgressBar"
             android_custom:style="FILL"
             android:layout_width="60dp"

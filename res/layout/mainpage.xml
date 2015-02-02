@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:background="@color/white"
     >
-    <com.dynastech.cdmetro.newui.widget.ScrollLayout 
+    <com.dynastech.oa.ui.widget.ScrollLayout 
       android:id="@+id/main_scrolllayout"    
 	  android:layout_width="fill_parent"    
 	  android:layout_height="0dp"
@@ -14,6 +14,6 @@
          <include layout="@layout/dt_mainpage" />
          <include layout="@layout/new_setting" />
         
-    </com.dynastech.cdmetro.newui.widget.ScrollLayout>
+    </com.dynastech.oa.ui.widget.ScrollLayout>
     <include layout="@layout/main_footer"/>"
 </LinearLayout>

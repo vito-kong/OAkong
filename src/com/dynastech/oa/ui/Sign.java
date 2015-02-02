@@ -1,5 +1,6 @@
 package com.dynastech.oa.ui;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -20,17 +21,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dynastech.cdmetro.AppContext;
-import com.dynastech.cdmetro.newui.BaseActivity;
-import com.dynastech.cdmetro.newui.api.ApiClient;
-import com.dynastech.cdmetro.newui.entity.User;
-import com.dynastech.cdmetro.newui.util.JsonUtils;
-import com.dynastech.cdmetro.utils.URLS;
+import com.dynastech.oa.AppContext;
 import com.dynastech.oa.R;
-import com.dynastech.oa.entity.LocationGson;
-import com.dynastech.oa.entity.LoginGson;
-import com.dynastech.oa.entity.SingGson;
-import com.dynastech.oa.task.SginLoginTask;
+import com.dynastech.oa.ui.api.ApiClient;
+import com.dynastech.oa.ui.entity.LocationGson;
+import com.dynastech.oa.ui.entity.LoginGson;
+import com.dynastech.oa.ui.entity.SingGson;
+import com.dynastech.oa.ui.entity.User;
+import com.dynastech.oa.ui.tasks.SginLoginTask;
+import com.dynastech.oa.ui.util.JsonUtils;
+import com.dynastech.oa.utils.URLS;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
@@ -43,7 +43,13 @@ import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Sign extends BaseActivity implements View.OnClickListener {
+/**
+ * @author Vito Kong
+ * 签到功能
+ * 该功能调用的是移动外勤系统的接口
+ */
+@SuppressLint("NewApi") 
+	public class Sign extends BaseActivity implements View.OnClickListener {
 	public static final int SIGN = 2;
 	private String address;
 	private AppContext appContext;
@@ -123,7 +129,7 @@ public class Sign extends BaseActivity implements View.OnClickListener {
 			// arrayOfObject[3] = this.params;
 			localSginLoginTask.execute(sign_login_url, params);
 			Log.i("sign params", params.toString());
-			Toast.makeText(this.ctx, "签到未登录成功,正在测试中", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this.ctx, "签到未登录成功,请重新尝试", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.signin_back:
 			finish();
@@ -172,6 +178,7 @@ public class Sign extends BaseActivity implements View.OnClickListener {
 		unregisterReceiver(this.receiver);
 	}
 
+	@SuppressLint("NewApi") 
 	class SendTask extends AsyncTask<String, Void, String> {
 		SendTask() {
 		}

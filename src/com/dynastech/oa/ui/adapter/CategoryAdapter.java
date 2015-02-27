@@ -6,7 +6,7 @@ import com.dynastech.oa.AppContext;
 import com.dynastech.oa.R;
 import com.dynastech.oa.beans.ContextBean;
 import com.dynastech.oa.beans.LzList;
-import com.dynastech.oa.ui.util.AsyncImageLoader.ImageCallback;
+import com.dynastech.oa.utils.AsyncImageLoader.ImageCallback;
 
 import android.content.Context;
 import android.graphics.BitmapFactory;

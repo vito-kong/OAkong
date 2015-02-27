@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.util.Properties;
 
 import com.dynastech.oa.ui.entity.AccessInfo;
-import com.dynastech.oa.ui.util.StringUtils;
+import com.dynastech.oa.utils.StringUtils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

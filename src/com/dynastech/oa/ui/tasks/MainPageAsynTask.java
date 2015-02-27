@@ -3,7 +3,7 @@ package com.dynastech.oa.ui.tasks;
 import com.dynastech.oa.AppContext;
 import com.dynastech.oa.AppException;
 import com.dynastech.oa.ui.entity.HomeData;
-import com.dynastech.oa.ui.util.UIHelper;
+import com.dynastech.oa.utils.UIHelper;
 
 import android.app.AlertDialog;
 import android.content.Context;

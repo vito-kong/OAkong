@@ -1,0 +1,15 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+     >
+     
+<ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       	android:id="@+id/attach_list"
+       android:divider="@android:color/transparent"
+       android:focusable="false"
+        />
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/attach.xml -->

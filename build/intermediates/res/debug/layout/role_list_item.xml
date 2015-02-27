@@ -1,0 +1,22 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+   	android:id="@+id/section_title_all"
+   	android:background="#CFCFCF"
+    >
+    <TextView android:layout_width="fill_parent"
+        	  android:layout_height="40dp"
+        	  android:textColor="@color/black"
+        	  android:textSize="15sp"
+        	  android:gravity="center_vertical"
+        	  android:paddingLeft="10dp"
+        	  android:id="@+id/section_title"	
+        />
+    <ImageView android:layout_width="20dp"
+        	   android:layout_height="20dp"
+        	   android:layout_gravity="right|center_vertical"
+        	   android:id="@+id/role_section_icon"	
+        	   android:background="@drawable/ap_groupcollapse"
+        />
+</FrameLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/role_list_item.xml -->

@@ -12,7 +12,7 @@ import java.util.Date;
 
 import org.apache.commons.httpclient.HttpException;
 
-import com.dynastech.oa.ui.util.UIHelper;
+import com.dynastech.oa.utils.UIHelper;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

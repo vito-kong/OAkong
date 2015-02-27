@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.dynastech.oa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <include
+        android:id="@+id/online_image_title"
+        layout="@layout/title_layout" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/online_image_title" >
+
+        <it.sephiroth.android.library.imagezoom.ImageViewTouch
+            android:id="@+id/online_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/image_content"
+            android:scaleType="fitCenter" />
+
+        <com.dynastech.oa.ui.widget.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android_custom:style="FILL"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android_custom:roundProgressColor="#C2C2C2"
+            android_custom:roundWidth="1dip" />
+    </FrameLayout>
+
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/online_image.xml -->

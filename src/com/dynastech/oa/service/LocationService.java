@@ -8,6 +8,9 @@ import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 
+/**
+ * 百度的定位服务
+ */
 public class LocationService extends Service {
 	private String address;
 	private double latitude;

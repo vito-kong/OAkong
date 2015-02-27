@@ -58,7 +58,7 @@ public class DocumentsListActivity extends BaseActivity {
 					adapter.notifyDataSetChanged();
 				}
 			} else {
-				Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT).show();
 			}
 		};
 	};

@@ -24,10 +24,9 @@ import com.dynastech.oa.AppContext;
 import com.dynastech.oa.R;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.User;
-import com.dynastech.oa.ui.util.DiskLruCache;
-import com.dynastech.oa.ui.util.ImageFetcher;
-import com.dynastech.oa.ui.util.ImageCache.ImageCacheParams;
 import com.dynastech.oa.ui.widget.RoundProgressBar;
+import com.dynastech.oa.utils.DiskLruCache;
+import com.dynastech.oa.utils.ImageFetcher;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -208,7 +207,7 @@ public class OnlineImage extends FragmentActivity {
 				putImageEnterCache(result, key);
 			} else {
 				mImage.setImageResource(R.drawable.empty_photo);
-				Toast.makeText(mContext, "加载图片失败...", Toast.LENGTH_LONG).show();
+				Toast.makeText(mContext, R.string.load_failed_img, Toast.LENGTH_LONG).show();
 			}
 
 		}
@@ -238,7 +237,7 @@ public class OnlineImage extends FragmentActivity {
 			getBitmapCache().put(key, bitmap);
 		} else {
 			mImage.setImageResource(R.drawable.empty_photo);
-			Toast.makeText(mContext, "加载图片失败...", Toast.LENGTH_LONG).show();
+			Toast.makeText(mContext, R.string.load_failed_img, Toast.LENGTH_LONG).show();
 		}
 	}
 

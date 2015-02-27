@@ -29,7 +29,7 @@ import com.dynastech.oa.ui.entity.LoginGson;
 import com.dynastech.oa.ui.entity.SingGson;
 import com.dynastech.oa.ui.entity.User;
 import com.dynastech.oa.ui.tasks.SginLoginTask;
-import com.dynastech.oa.ui.util.JsonUtils;
+import com.dynastech.oa.utils.JsonUtils;
 import com.dynastech.oa.utils.URLS;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -129,7 +129,7 @@ import org.json.JSONObject;
 			// arrayOfObject[3] = this.params;
 			localSginLoginTask.execute(sign_login_url, params);
 			Log.i("sign params", params.toString());
-			Toast.makeText(this.ctx, "签到未登录成功,请重新尝试", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this.ctx, R.string.sign_failed, Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.signin_back:
 			finish();
@@ -228,19 +228,19 @@ import org.json.JSONObject;
 				try {
 					if (((Boolean) new JSONObject(paramString).get("Success"))
 							.booleanValue()) {
-						Toast.makeText(Sign.this.ctx, "签到成功",
+						Toast.makeText(Sign.this.ctx, R.string.sign_succeed,
 								Toast.LENGTH_SHORT).show();
 						Sign.this.finish();
 						return;
 					}
-					Toast.makeText(Sign.this.ctx, "签到失败， 再次签到",
+					Toast.makeText(Sign.this.ctx, R.string.sign_failed,
 							Toast.LENGTH_SHORT).show();
 					return;
 				} catch (JSONException localJSONException) {
 					localJSONException.printStackTrace();
 					return;
 				}
-			Toast.makeText(Sign.this.ctx, "签到失败， 再次签到", Toast.LENGTH_SHORT)
+			Toast.makeText(Sign.this.ctx, R.string.sign_failed, Toast.LENGTH_SHORT)
 					.show();
 		}
 

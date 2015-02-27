@@ -27,6 +27,48 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.GestureDetector.OnGestureListener;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.View.OnTouchListener;
+import android.view.Window;
+import android.view.animation.AnimationUtils;
+import android.webkit.HttpAuthHandler;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import com.dynastech.oa.AppContext;
 import com.dynastech.oa.R;
 import com.dynastech.oa.beans.ApprovalBean;
@@ -42,59 +84,17 @@ import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.Attachment;
 import com.dynastech.oa.ui.entity.PermissionBean;
 import com.dynastech.oa.ui.entity.User;
-import com.dynastech.oa.ui.util.FileUtils;
-import com.dynastech.oa.ui.util.ImageUtils;
-import com.dynastech.oa.ui.util.JsonUtils;
-import com.dynastech.oa.ui.util.MediaUtils;
-import com.dynastech.oa.ui.util.NetWorkHelper;
-import com.dynastech.oa.ui.util.StringUtils;
-import com.dynastech.oa.ui.util.UIHelper;
+import com.dynastech.oa.utils.FileUtils;
 import com.dynastech.oa.utils.FormType;
 import com.dynastech.oa.utils.HttpUtils;
+import com.dynastech.oa.utils.ImageUtils;
+import com.dynastech.oa.utils.JsonUtils;
+import com.dynastech.oa.utils.MediaUtils;
+import com.dynastech.oa.utils.NetWorkHelper;
+import com.dynastech.oa.utils.StringUtils;
+import com.dynastech.oa.utils.UIHelper;
 import com.dynastech.oa.utils.URLS;
 import com.google.gson.reflect.TypeToken;
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.DialogInterface.OnCancelListener;
-import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.media.MediaPlayer;
-import android.media.MediaRecorder;
-import android.net.Uri;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.provider.MediaStore;
-import android.util.Log;
-import android.view.GestureDetector.OnGestureListener;
-import android.view.GestureDetector;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.Window;
-import android.view.View.OnClickListener;
-import android.view.View.OnTouchListener;
-import android.view.animation.AnimationUtils;
-import android.webkit.HttpAuthHandler;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class ManageActivity2 extends BaseActivity implements OnClickListener,
 		OnTouchListener, OnGestureListener {
@@ -303,7 +303,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				savedir.mkdirs();
 			}
 		} else {
-			UIHelper.ToastMessage(context, "无法保存视频，请检查SD卡是否挂载");
+			UIHelper.ToastMessage(context, R.string.save_video_failed_to_no_sdcard);
 			return null;
 		}
 		File mediaFile = null;
@@ -329,7 +329,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				savedir.mkdirs();
 			}
 		} else {
-			UIHelper.ToastMessage(context, "无法保存录音，请检查SD卡是否挂载");
+			UIHelper.ToastMessage(context, R.string.save_tape_failed_to_no_sdcard);
 			return;
 		}
 
@@ -583,7 +583,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				@Override
 				public void onClick(View v) {
 					if (permission == null || "".equals(permission)) {
-						Toast.makeText(context, "该事项不能处理", Toast.LENGTH_SHORT)
+						Toast.makeText(context, R.string.handle_item_failed_to_no_permission, Toast.LENGTH_SHORT)
 								.show();
 						// return;
 					} else {
@@ -935,21 +935,21 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 			if (canUploadFile) {
 				startActionCamera();
 			} else {
-				UIHelper.ToastMessage(context, "没有权限不能上传附件");
+				UIHelper.ToastMessage(context, R.string.upload_attachment_failed_to_no_permission);
 			}
 			break;
 		case R.id.tool_picture:
 			if (canUploadFile) {
 				startImagePick();
 			} else {
-				UIHelper.ToastMessage(context, "没有权限不能上传附件");
+				UIHelper.ToastMessage(context, R.string.upload_attachment_failed_to_no_permission);
 			}
 			break;
 		case R.id.tool_video:
 			if (canUploadFile) {
 				dispactchTakeVideoIntent();
 			} else {
-				UIHelper.ToastMessage(context, "没有权限不能上传附件");
+				UIHelper.ToastMessage(context, R.string.upload_attachment_failed_to_no_permission);
 			}
 
 			break;
@@ -1011,11 +1011,11 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 	private void dispactchTakeVideoIntent() {
 
 		if (!NetWorkHelper.isNetworkAvailable(context)) {
-			Toast.makeText(context, "网络未连接无法上传附件", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, R.string.upload_attachment_failed_to_no_network, Toast.LENGTH_SHORT).show();
 			return;
 		}
 		if (!hasSdcard()) {
-			Toast.makeText(context, "sd卡未挂载", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, R.string.no_sdcard, Toast.LENGTH_SHORT).show();
 			return;
 		}
 		Intent takeVideoIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
@@ -1072,7 +1072,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				savedir.mkdirs();
 			}
 		} else {
-			UIHelper.ToastMessage(context, "无法保存图片，请检查SD卡是否挂载");
+			UIHelper.ToastMessage(context, R.string.save_img_failed_to_no_sdcard);
 			return null;
 		}
 		String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss")
@@ -1119,7 +1119,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				savedir.mkdirs();
 			}
 		} else {
-			UIHelper.ToastMessage(context, "无法保存上传的图片，请检查SD卡是否挂载");
+			UIHelper.ToastMessage(context, R.string.save_img_failed_to_no_sdcard);
 			return null;
 		}
 		String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss")
@@ -1223,7 +1223,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				finish();
 
 			} else {
-				Toast.makeText(context, "回退失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.rollback_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 
@@ -1272,7 +1272,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				approvaladapter.setData(agson);
 				approvaladapter.notifyDataSetChanged();
 			} else {
-				Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT).show();
 			}
 
 		}
@@ -1379,10 +1379,10 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 					if ("1".equals(isGetBackSuccess)) {
 						setResult(RESULT_OK);
 						finish();
-						Toast.makeText(context, "取回成功", Toast.LENGTH_SHORT)
+						Toast.makeText(context, R.string.getback_succeed, Toast.LENGTH_SHORT)
 								.show();
 					} else {
-						Toast.makeText(context, "取回失败", Toast.LENGTH_SHORT)
+						Toast.makeText(context, R.string.getback_failed, Toast.LENGTH_SHORT)
 								.show();
 					}
 				} catch (JSONException e) {
@@ -1391,7 +1391,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				}
 
 			} else {
-				Toast.makeText(context, "取回失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.getback_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 
@@ -1531,7 +1531,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 					e.printStackTrace();
 				}
 			} else {
-				Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 
@@ -1582,7 +1582,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 
 		if (v == button_audio) {
 			if (!canUploadFile) {
-				UIHelper.ToastMessage(context, "没有权限不能上传附件");
+				UIHelper.ToastMessage(context, R.string.upload_attachment_failed_to_no_permission);
 				return false;
 			}
 			int action = event.getAction();
@@ -1619,15 +1619,19 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 	public void attachMethod(String filepath) throws Exception {
 
 		if (!NetWorkHelper.isNetworkAvailable(context)) {
-			Toast.makeText(context, "网络未连接无法上传附件", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, R.string.upload_attachment_failed_to_no_network, Toast.LENGTH_SHORT).show();
 			return;
 		}
 		if (!hasSdcard()) {
-			Toast.makeText(context, "sd卡未挂载", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, R.string.no_sdcard, Toast.LENGTH_SHORT).show();
 			return;
 		}
 
-		File file = new File(filepath);
+		
+		//压缩图片测试
+		
+		File file = new File(ImageUtils.compressPic(appContext, filepath));
+//		File file = new File(filepath);
 		HashMap<String, String> param = new HashMap<String, String>();
 		param.put("Action", "UploadWorkItemAttachment");
 		param.put("workflowId", WorkflowId);
@@ -1812,9 +1816,10 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 			Log.i(tag, "result:" + result);
 			if (result != null && !"".equals(result.trim())) {
 				initNetSendMessage();
-				Toast.makeText(context, "附件上传完成", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.upload_succeed, Toast.LENGTH_SHORT).show();
 			} else {
-				Toast.makeText(context, "附件上传失败", Toast.LENGTH_SHORT).show();
+				//文件上传失败时也有返回信息，此处应校验返回信息
+				Toast.makeText(context, R.string.upload_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 
@@ -1964,12 +1969,12 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 								.lastIndexOf("_") + 1));
 					}
 				} else {
-					Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT)
+					Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT)
 							.show();
 				}
 
 			} else {
-				Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 
@@ -2129,7 +2134,7 @@ public class ManageActivity2 extends BaseActivity implements OnClickListener,
 				finish();
 
 			} else {
-				Toast.makeText(context, "处理失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.handle_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 

@@ -14,7 +14,7 @@ import com.dynastech.oa.ui.OnLineWatch;
 import com.dynastech.oa.ui.OnlineImage;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.CommentReplyBean;
-import com.dynastech.oa.ui.util.ToolUtils;
+import com.dynastech.oa.utils.ToolUtils;
 import com.dynastech.oa.utils.URLS;
 
 import android.content.Context;

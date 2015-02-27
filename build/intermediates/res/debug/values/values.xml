@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/arrays.xml -->
+    <eat-comment/>
+    <array name="flashmode_icons">
+        <item>@drawable/ic_viewfinder_flash_auto</item>
+        <item>@drawable/ic_viewfinder_flash_on</item>
+        <item>@drawable/ic_viewfinder_flash_off</item>
+    </array>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="menu">
+        <item>待办事项</item>
+        <item>已办事项</item>
+        <item>注销登录</item>
+    </string-array>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="pref_camera_coloreffect_entries" translatable="false">
+        <item>@string/pref_camera_coloreffect_entry_none</item>
+        <item>@string/pref_camera_coloreffect_entry_mono</item>
+        <item>@string/pref_camera_coloreffect_entry_sepia</item>
+        <item>@string/pref_camera_coloreffect_entry_negative</item>
+        <item>@string/pref_camera_coloreffect_entry_solarize</item>
+        <item>@string/pref_camera_coloreffect_entry_posterize</item>
+        <item>@string/pref_camera_coloreffect_entry_aqua</item>
+        <item>@string/pref_camera_coloreffect_entry_pastel</item>
+        <item>@string/pref_camera_coloreffect_entry_mosaic</item>
+        <item>@string/pref_camera_coloreffect_entry_redtint</item>
+        <item>@string/pref_camera_coloreffect_entry_bluetint</item>
+        <item>@string/pref_camera_coloreffect_entry_greentint</item>
+    </string-array>
+    <string-array name="pref_camera_coloreffect_entryvalues" translatable="false">
+        <item>none</item>
+        <item>mono</item>
+        <item>sepia</item>
+        <item>negative</item>
+        <item>solarize</item>
+        <item>posterize</item>
+        <item>aqua</item>
+        <item>pastel</item>
+        <item>mosaic</item>
+        <item>red-tint</item>
+        <item>blue-tint</item>
+        <item>green-tint</item>
+    </string-array>
+    <string-array name="pref_camera_flashmode_entries" translatable="false">
+        <item>@string/pref_camera_flashmode_entry_auto</item>
+        <item>@string/pref_camera_flashmode_entry_on</item>
+        <item>@string/pref_camera_flashmode_entry_off</item>
+    </string-array>
+    <string-array name="pref_camera_flashmode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+    <array name="pref_camera_flashmode_icons">
+        <item>@drawable/ic_menuselect_flash_auto</item>
+        <item>@drawable/ic_menuselect_flash_on</item>
+        <item>@drawable/ic_menuselect_flash_off</item>
+    </array>
+    <string-array name="pref_camera_focusmode_entries" translatable="false">
+        <item>@string/pref_camera_focusmode_entry_auto</item>
+        <item>@string/pref_camera_focusmode_entry_infinity</item>
+        <item>@string/pref_camera_focusmode_entry_macro</item>
+    </string-array>
+    <string-array name="pref_camera_focusmode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>infinity</item>
+        <item>macro</item>
+    </string-array>
+    <string-array name="pref_camera_jpegquality_entries" translatable="false">
+        <item>@string/pref_camera_jpegquality_entry_superfine</item>
+        <item>@string/pref_camera_jpegquality_entry_fine</item>
+        <item>@string/pref_camera_jpegquality_entry_normal</item>
+    </string-array>
+    <string-array name="pref_camera_jpegquality_entryvalues" translatable="false">
+        <item>superfine</item>
+        <item>fine</item>
+        <item>normal</item>
+    </string-array>
+    <string-array name="pref_camera_picturesize_entries" translatable="false">
+        <!-- TODO: Change to a better name of the preference.
+                The first element of the array sould be
+                "pref_camera_picturesize_entry_2592x1944". However, we are too
+                late for the translation. Since we show the same label as the
+                second item, we just use the second one instead.
+        -->
+        <item>@string/pref_camera_picturesize_entry_2592x1936</item>
+        <item>@string/pref_camera_picturesize_entry_2592x1936</item>
+        <item>@string/pref_camera_picturesize_entry_2592x1936</item>
+        <item>@string/pref_camera_picturesize_entry_2048x1536</item>
+        <item>@string/pref_camera_picturesize_entry_1600x1200</item>
+        <item>@string/pref_camera_picturesize_entry_1024x768</item>
+        <item>@string/pref_camera_picturesize_entry_640x480</item>
+        <item>@string/pref_camera_picturesize_entry_320x240</item>
+    </string-array>
+    <string-array name="pref_camera_picturesize_entryvalues" translatable="false">
+        <item>2592x1944</item>
+        <item>2592x1936</item>
+        <item>2560x1920</item>
+        <item>2048x1536</item>
+        <item>1600x1200</item>
+        <item>1024x768</item>
+        <item>640x480</item>
+        <item>320x240</item>
+    </string-array>
+    <array name="pref_camera_recordlocation_entries" translatable="false">
+        <item>@string/pref_camera_recordlocation_entry_off</item>
+        <item>@string/pref_camera_recordlocation_entry_on</item>
+    </array>
+    <string-array name="pref_camera_recordlocation_entryvalues" translatable="false">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    <array name="pref_camera_recordlocation_icons" translatable="false">
+        <item>@drawable/ic_menuselect_gps_off</item>
+        <item>@drawable/ic_menuselect_gps_on</item>
+    </array>
+    <string-array name="pref_camera_scenemode_entries" translatable="false">
+        <item>@string/pref_camera_scenemode_entry_auto</item>
+        <item>@string/pref_camera_scenemode_entry_action</item>
+        <item>@string/pref_camera_scenemode_entry_portrait</item>
+        <item>@string/pref_camera_scenemode_entry_landscape</item>
+        <item>@string/pref_camera_scenemode_entry_night</item>
+        <item>@string/pref_camera_scenemode_entry_night_portrait</item>
+        <item>@string/pref_camera_scenemode_entry_theatre</item>
+        <item>@string/pref_camera_scenemode_entry_beach</item>
+        <item>@string/pref_camera_scenemode_entry_snow</item>
+        <item>@string/pref_camera_scenemode_entry_sunset</item>
+        <item>@string/pref_camera_scenemode_entry_steadyphoto</item>
+        <item>@string/pref_camera_scenemode_entry_fireworks</item>
+        <item>@string/pref_camera_scenemode_entry_party</item>
+        <item>@string/pref_camera_scenemode_entry_candlelight</item>
+    </string-array>
+    <string-array name="pref_camera_scenemode_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>action</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>night</item>
+        <item>night-portrait</item>
+        <item>theatre</item>
+        <item>beach</item>
+        <item>snow</item>
+        <item>sunset</item>
+        <item>steadyphoto</item>
+        <item>fireworks</item>
+        <item>party</item>
+        <item>candlelight</item>
+    </string-array>
+    <string-array name="pref_camera_video_flashmode_entries" translatable="false">
+        <item>@string/pref_camera_flashmode_entry_on</item>
+        <item>@string/pref_camera_flashmode_entry_off</item>
+    </string-array>
+    <string-array name="pref_camera_video_flashmode_entryvalues" translatable="false">
+        <item>torch</item>
+        <item>off</item>
+    </string-array>
+    <array name="pref_camera_video_flashmode_icons">
+        <item>@drawable/ic_menuselect_flash_on</item>
+        <item>@drawable/ic_menuselect_flash_off</item>
+    </array>
+    <string-array name="pref_camera_whitebalance_entries" translatable="false">
+        <item>@string/pref_camera_whitebalance_entry_auto</item>
+        <item>@string/pref_camera_whitebalance_entry_incandescent</item>
+        <item>@string/pref_camera_whitebalance_entry_daylight</item>
+        <item>@string/pref_camera_whitebalance_entry_fluorescent</item>
+        <item>@string/pref_camera_whitebalance_entry_cloudy</item>
+    </string-array>
+    <string-array name="pref_camera_whitebalance_entryvalues" translatable="false">
+        <item>auto</item>
+        <item>incandescent</item>
+        <item>daylight</item>
+        <item>fluorescent</item>
+        <item>cloudy-daylight</item>
+    </string-array>
+    <array name="pref_camera_whitebalance_icons">
+        <item>@drawable/ic_menuselect_wb_auto</item>
+        <item>@drawable/ic_menuselect_wb_incandescent</item>
+        <item>@drawable/ic_menuselect_wb_daylight</item>
+        <item>@drawable/ic_menuselect_wb_fluorescent</item>
+        <item>@drawable/ic_menuselect_wb_cloudy</item>
+    </array>
+    <string-array name="pref_video_quality_entries" translatable="false">
+        <item>@string/pref_video_quality_entry_high</item>
+        <item>@string/pref_video_quality_entry_low</item>
+        <item>@string/pref_video_quality_entry_mms</item>
+        <item>@string/pref_video_quality_entry_youtube</item>
+    </string-array>
+    <string-array name="pref_video_quality_entryvalues" translatable="false">
+        <item>high</item>
+        <item>low</item>
+        <item>mms</item>
+        <item>youtube</item>
+    </string-array>
+    <array name="recordlocation_icons">
+        <item>@drawable/ic_viewfinder_gps_off</item>
+        <item>@drawable/ic_viewfinder_gps_on</item>
+    </array>
+    <array name="video_flashmode_icons">
+        <item>@drawable/ic_viewfinder_flash_on</item>
+        <item>@drawable/ic_viewfinder_flash_off</item>
+    </array>
+    <array name="video_quality_icons" translatable="false">
+        <item>@drawable/ic_viewfinder_video_quality_high</item>
+        <item>@drawable/ic_viewfinder_video_quality_low</item>
+        <item>@drawable/ic_viewfinder_video_quality_mms</item>
+        <item>@drawable/ic_viewfinder_video_quality_youtube</item>
+    </array>
+    <array name="whitebalance_icons">
+        <item>@drawable/ic_viewfinder_wb_auto</item>
+        <item>@drawable/ic_viewfinder_wb_incandescent</item>
+        <item>@drawable/ic_viewfinder_wb_daylight</item>
+        <item>@drawable/ic_viewfinder_wb_fluorescent</item>
+        <item>@drawable/ic_viewfinder_wb_cloudy</item>
+    </array>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="aquamarine">#7FFFD4</color>
+    <color name="black">#000000</color>
+    <color name="blue">#33B5E5</color>
+    <color name="blue_sky">#A0C8FF</color>
+    <color name="chartreuse">#7FFF00</color>
+    <color name="contact_detail_display_text">#FFFFFF</color>
+    <color name="contact_item_additional_info_color">#ff636363</color>
+    <color name="contact_item_bg">#ff9fcff8</color>
+    <color name="contact_item_name_color">#ff363636</color>
+    <color name="contact_overlay_letter">#6699ff</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="drop_down_list_footer_font_color">#5200D5</color>
+    <color name="drop_down_list_header_font_color">#A72309</color>
+    <color name="drop_down_list_header_second_font_color">#729045</color>
+    <color name="firebrick">#B22222</color>
+    <color name="friend_group_name">#003e5a</color>
+    <color name="friend_name">#97bccd</color>
+    <color name="friend_sign">#6ca5d6</color>
+    <color name="greenyellow">#ADFF2F</color>
+    <color name="grey">#ff808080</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="lawngreen">#7CFC00</color>
+    <color name="lightblue">#ADD8E6</color>
+    <color name="lightslategray">#778899</color>
+    <color name="lightslategrey">#778899</color>
+    <color name="lightsteelblue">#B0C4DE</color>
+    <color name="mediumslateblue">#7B68EE</color>
+    <color name="morebutton">#1369B0</color>
+    <color name="paleturquoise">#AFEEEE</color>
+    <color name="pinned_header_background">#8a9ba8</color>
+    <color name="pinned_header_text">#ff636363</color>
+    <color name="pls_talk_normal">#364f73</color>
+    <color name="powderblue">#B0E0E6</color>
+    <color name="press">#e2e5ea</color>
+    <color name="recording_time_elapsed_text">#FFFFFFFF</color>
+    <color name="recording_time_remaining_text">#FFFF0033</color>
+    <color name="red">#FF0000</color>
+    <color name="search_hint">#ffcccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="vert_manu">#CCFF00</color>
+    <color name="white">#FFFFFF</color>
+    <declare-styleable name="CameraPreference"><attr format="string" name="title"/></declare-styleable>
+    <declare-styleable name="DraggableDot"><attr format="dimension" name="radius"/><attr format="string" name="legend"/><attr name="anr"><enum name="none" value="0"/><enum name="thumbnail" value="1"/><enum name="drop" value="2"/></attr></declare-styleable>
+    <declare-styleable name="FragmentArguments"><attr name="android:label"/></declare-styleable>
+    <declare-styleable name="Gallery1"><attr name="android:galleryItemBackground"/></declare-styleable>
+    <declare-styleable name="IconIndicator"><attr format="reference" name="icons"/><attr format="reference" name="modes"/></declare-styleable>
+    <declare-styleable name="IconListPreference"><attr name="icons"/><attr format="reference" name="largeIcons"/></declare-styleable>
+    <declare-styleable name="ListPreference"><attr format="string" name="key"/><attr format="string" name="defaultValue"/><attr format="reference" name="entryValues"/><attr format="reference" name="entries"/></declare-styleable>
+    <declare-styleable name="PullActivateLayout"><attr format="reference" name="actionViewId"/><attr format="reference" name="toolViewId"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="RoundProgressBar"><attr format="color" name="roundColor"/><attr format="color" name="roundProgressColor"/><attr format="dimension" name="roundWidth"/><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="integer" name="max"/><attr format="boolean" name="textIsDisplayable"/><attr name="style"><enum name="STROKE" value="0"/><enum name="FILL" value="1"/></attr></declare-styleable>
+    <declare-styleable name="TogglePrefAttrs"><attr name="android:preferenceLayoutChild"/></declare-styleable>
+    <declare-styleable name="drop_down_list_attr"><attr format="boolean" name="isDropDownStyle"/><attr format="boolean" name="isOnBottomStyle"/><attr format="boolean" name="isAutoLoadOnBottom"/></declare-styleable>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="BasicTextSize">15.0dip</dimen>
+    <dimen name="ChattingContentMinHeight">49.0dip</dimen>
+    <dimen name="LargeTextSize">17.0dip</dimen>
+    <dimen name="SmallTextSize">14.0dip</dimen>
+    <dimen name="TitleTextSize">18.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="callButton_height">55sp</dimen>
+    <dimen name="callButton_width">150sp</dimen>
+    <dimen name="call_end_icon_padding_left">70dp</dimen>
+    <dimen name="call_icon_padding_left">7dp</dimen>
+    <dimen name="call_item_text_size">20sp</dimen>
+    <dimen name="call_text_padding">3dp</dimen>
+    <dimen name="contact_detail_leftright_space">40.0dip</dimen>
+    <dimen name="contact_detail_photo_space">45.0dip</dimen>
+    <dimen name="dialog_bottom_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_right_margin">10dp</dimen>
+    <dimen name="dialog_btn_close_top_margin">10dp</dimen>
+    <dimen name="dialog_left_margin">10dp</dimen>
+    <dimen name="dialog_right_margin">10dp</dimen>
+    <dimen name="dialog_title_height">30dp</dimen>
+    <dimen name="dialog_title_logo_left_margin">5dp</dimen>
+    <dimen name="dialog_top_margin">30dp</dimen>
+    <dimen name="distance_betweenbuttons">1dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="gd_arrow_offset">5dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="hint_y_offset">64dip</dimen>
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+    <dimen name="image_thumbnail_size">50dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    <dimen name="incoming_accept_padding_left">10dp</dimen>
+    <dimen name="incoming_refuse_padding_left">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="keyboard_call_size">26sp</dimen>
+    <dimen name="keyboard_edit_height">50dp</dimen>
+    <dimen name="keyboard_edit_text_size">30sp</dimen>
+    <dimen name="keyboard_key_height">55dp</dimen>
+    <dimen name="lz_mainpage_iconbetween">10dp</dimen>
+    <dimen name="lz_mainpage_iconsize">50dp</dimen>
+    <dimen name="lz_mainpage_imagesize">45dp</dimen>
+    <dimen name="mainpage_itemsize_height">90dp</dimen>
+    <dimen name="mainpage_itemsize_width">90dp</dimen>
+    <dimen name="name_margin_top">30dp</dimen>
+    <dimen name="page_margin">15dp</dimen>
+    <dimen name="pager_margin">45dp</dimen>
+    <dimen name="password_padding">50.0dip</dimen>
+    <dimen name="popup_win_height">42.0dip</dimen>
+    <dimen name="search_view_margin_left">35dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="space_1">10.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_11">11.0dip</dimen>
+    <dimen name="space_12">12.0dip</dimen>
+    <dimen name="space_13">13.0dip</dimen>
+    <dimen name="space_14">14.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_16">16.0dip</dimen>
+    <dimen name="space_17">17.0dip</dimen>
+    <dimen name="space_18">18.0dip</dimen>
+    <dimen name="space_19">19.0dip</dimen>
+    <dimen name="space_2">2.0dip</dimen>
+    <dimen name="space_20">20.0dip</dimen>
+    <dimen name="space_21">21.0dip</dimen>
+    <dimen name="space_22">22.0dip</dimen>
+    <dimen name="space_23">23.0dip</dimen>
+    <dimen name="space_24">24.0dip</dimen>
+    <dimen name="space_25">25.0dip</dimen>
+    <dimen name="space_26">26.0dip</dimen>
+    <dimen name="space_27">27.0dip</dimen>
+    <dimen name="space_28">28.0dip</dimen>
+    <dimen name="space_29">29.0dip</dimen>
+    <dimen name="space_3">3.0dip</dimen>
+    <dimen name="space_30">30.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_6">6.0dip</dimen>
+    <dimen name="space_7">7.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_9">9.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+    <dimen name="text_size_11">11.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_13">13.0dip</dimen>
+    <dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_15">15.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_17">17.0dip</dimen>
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_19">19.0dip</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_21">21.0dip</dimen>
+    <dimen name="text_size_22">22.0dip</dimen>
+    <dimen name="text_size_23">23.0dip</dimen>
+    <dimen name="text_size_24">24.0dip</dimen>
+    <dimen name="text_size_25">25.0dip</dimen>
+    <dimen name="text_size_26">26.0dip</dimen>
+    <dimen name="text_size_27">27.0dip</dimen>
+    <dimen name="text_size_28">28.0dip</dimen>
+    <dimen name="text_size_29">29.0dip</dimen>
+    <dimen name="text_size_30">30.0dip</dimen>
+    <dimen name="text_size_31">31.0dip</dimen>
+    <dimen name="text_size_32">32.0dip</dimen>
+    <dimen name="text_size_7">7.0dip</dimen>
+    <dimen name="text_size_8">8.0dip</dimen>
+    <dimen name="text_size_9">9.0dip</dimen>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="action_view" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="tool_view" type="id"/>
+    <item name="viewpager" type="id"/>
+    <item name="webview" type="id"/>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="OAUTH_AccessToken_ACCESS">用户授权登录成功</string>
+    <string name="OAUTH_AccessToken_ERROR">用户授权登录失败</string>
+    <string name="OAUTH_AccessToken_SXPIRED">授权已过期，请重新授权登录</string>
+    <string name="OAUTH_ERROR">服务器验证失败</string>
+    <string name="OAUTH_RequestToken_ACCESS">第三方应用验证成功</string>
+    <string name="OAUTH_RequestToken_ERROR">第三方应用验证失败</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+        this device.
+</string>
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="Weibo_Message_LONG">已超出140个字</string>
+    <string name="Weibo_Message_NULL">分享数据不能为空</string>
+    <string name="Weibo_Share_Error">微博分享失败</string>
+    <string name="Weibo_Share_Repeat">已经分享过了</string>
+    <string name="Weibo_Share_Success">微博分享成功</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="access_sd_fail" product="nosdcard">Failed to access USB storage.</string>
+    <string name="action_settings">Settings</string>
+    <string name="ani_time">250</string>
+    <string name="ani_time2">500</string>
+    <string name="ani_timestartof">150</string>
+    <string name="app_description">This is a sample application for the Android Training class
+        "Displaying Bitmaps Efficiently"
+        (http://developer.android.com/training/displaying-bitmaps/display-bitmap.html). It is not
+        designed to be a full reference application but to demonstrate the concepts discussed in
+        training course.</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">OA</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_status_download">click to download</string>
+    <string name="app_status_download_fail">download fail, click to download again</string>
+    <string name="app_status_downloaded">downloaded, click to download again</string>
+    <string name="app_status_downloading">downloading</string>
+    <string name="app_status_pause">Pause</string>
+    <string name="app_status_pending">download Peding</string>
+    <string name="attach_begin">开始</string>
+    <string name="attach_cancel">取消</string>
+    <string name="attach_delete">删除</string>
+    <string name="attach_download">下载</string>
+    <string name="attach_pause">暂停</string>
+    <string name="attach_see">查看</string>
+    <string name="attachs_delete">删除</string>
+    <string name="attachs_download">下载</string>
+    <string name="attachs_play">打开</string>
+    <string name="borderscrollview_demo_activity_title">onBottom onTop ScrollView Demo</string>
+    <string name="bound_service">bound service</string>
+    <string name="broadcastreceiver_demo_activity_title">BroadcastReceiver Demo</string>
+    <string name="camera_error_title">Camera error</string>
+    <string name="camera_gallery_photos_text">Gallery</string>
+    <string name="camera_label">Camera</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="cancle">取消</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="cannot_connect_camera">Cannot connect to camera.</string>
+    <string name="certain_reject">你确定回退吗</string>
+    <string name="certain_revocation">你确定撤销吗</string>
+    <string name="certain_terminal">你确定中止吗</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="choose_image">请选择图片文件！</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="clearwords">清除文字吗？</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="confirm_restore_message">Camera settings will be restored to defaults.</string>
+    <string name="confirm_restore_title">Restore defaults</string>
+    <string name="contour">Contour</string>
+    <string name="data_complete">数据加载完成</string>
+    <string name="data_failed">数据获取失败</string>
+    <string name="datanull">没有可用数据</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="delete_blog">确定删除该博客吗？</string>
+    <string name="delete_image">确定删除该图片吗？</string>
+    <string name="delete_tweet">确定删除该动弹吗？</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="desc_border_scroll_view">BorderScrollView Usage</string>
+    <string name="desc_broadcast_receiver">Android BroadcastReceiver Usage</string>
+    <string name="desc_default">Trinea</string>
+    <string name="desc_download_manager">Download Manager Usage</string>
+    <string name="desc_drop_down_listview">Drop Down And On Bottom Listview</string>
+    <string name="desc_image_cache">ImageCache Usage</string>
+    <string name="desc_image_sdcard_cache">ImageSDCardCache Usage</string>
+    <string name="desc_search_view">SearchView Desc And Implement Search Tip</string>
+    <string name="desc_service">Android Service Usage</string>
+    <string name="desc_slide_gallery">Slide One Page Gallery Usage</string>
+    <string name="desc_view_pager">ViewPager And Fragment Usage</string>
+    <string name="desc_view_pager_multi_page">Viewpager With Multi Page</string>
+    <string name="description">Description: </string>
+    <string name="details_ok">OK</string>
+    <string name="domain">http://oa.dynastech.com:8000/mobile/index.ashx?</string>
+    <string name="download_begin">begin Download</string>
+    <string name="download_fail">download Fail</string>
+    <string name="download_manager_demo_activity_title">DownloadManager Demo</string>
+    <string name="download_notification_title">MeiLiShuo</string>
+    <string name="drop_down_list_footer_default_text">More</string>
+    <string name="drop_down_list_footer_loading_text">Loading…</string>
+    <string name="drop_down_list_footer_no_more_text">No More</string>
+    <string name="drop_down_list_header_default_text">Click to refresh…</string>
+    <string name="drop_down_list_header_loading_text">Loading…</string>
+    <string name="drop_down_list_header_pull_text">Drop Down to refresh…</string>
+    <string name="drop_down_list_header_release_text">Release to refresh…</string>
+    <string name="dropdownlistview_demo_activity_title">Drop Down And Load More ListView Demo</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="exit">退出</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris varius lacus porttitor eget blandit massa facilisis. Nulla pellentesque odio sed purus fermentum vitae viverra orci faucibus. Sed ullamcorper condimentum vulputate. Curabitur sit amet convallis velit. Vestibulum posuere eleifend risus ac adipiscing. Nam pulvinar nulla a velit faucibus imperdiet. Praesent eget nisi ac justo blandit sagittis. Maecenas at leo nisi, nec varius nisl.\nIn hac habitasse platea dictumst. Morbi neque tortor, vestibulum sed viverra a, luctus vel lorem. Nunc turpis eros, varius eget commodo et, euismod at eros. Sed tincidunt mi purus, vel posuere dui. Vestibulum ante lectus, porta sed mattis bibendum, scelerisque cursus sapien. Cras ultrices imperdiet fermentum. Aenean nisi nulla, euismod non blandit ac, dictum quis libero. Morbi consectetur tempor mollis. Suspendisse eget nunc arcu, vel ullamcorper augue. Integer malesuada, diam nec faucibus mollis, nisl velit euismod enim, ac mattis justo neque sit amet mauris. Vivamus pretium imperdiet pharetra.\nInteger sagittis augue sit amet lectus pulvinar sit amet commodo tortor mattis. Maecenas quis tellus eget ante eleifend sollicitudin non et nibh. Maecenas luctus euismod tristique. Fusce in odio nec diam blandit facilisis. Sed nec arcu eros. Vivamus quis tortor a metus tempus aliquam eget volutpat magna. Pellentesque id ultrices dolor. Sed blandit aliquet quam. Phasellus dapibus euismod vulputate. Aenean blandit, elit vitae vestibulum tincidunt, metus dui accumsan nulla, sit amet vehicula mauris lacus in est. Etiam dignissim pellentesque nulla vel malesuada. Cras vel lorem justo.\nSed condimentum nisl sit amet libero vestibulum hendrerit. Duis auctor tempus placerat. Proin velit ante, ornare nec dictum nec, hendrerit eu arcu. Etiam ut diam ornare quam venenatis pulvinar vitae vel leo. Vivamus consectetur, ante id interdum rhoncus, magna eros pulvinar lacus, a gravida nibh arcu vitae eros. Nulla scelerisque laoreet feugiat. Mauris sit amet gravida felis.\nNulla ac dolor sapien, vestibulum venenatis justo. Cras placerat velit vitae nibh pellentesque ultricies. Suspendisse adipiscing enim eu justo iaculis eu pretium urna fermentum. Duis porttitor nunc non nunc mattis vestibulum. Etiam elit tellus, feugiat in bibendum eget, adipiscing nec metus. Ut ut sem lacus, quis faucibus diam. Curabitur a nulla fermentum tortor dignissim posuere. Fusce faucibus ante ut sem imperdiet imperdiet eget vitae lorem. Etiam fringilla ornare ipsum, in sagittis quam ornare vitae. Nullam venenatis orci sit amet sapien adipiscing gravida. Proin turpis lectus, hendrerit vitae vehicula ut, auctor ac lectus. Pellentesque sollicitudin blandit ligula quis commodo. Mauris vulputate lectus in velit luctus aliquam. Quisque eget tincidunt elit. Quisque et augue quam, sed scelerisque eros.</string>
+    <string name="filter">Filter</string>
+    <string name="fragment_stack_support">Fragment/Stack</string>
+    <string name="fragment_tabs_pager">Fragment/Tabs and Pager</string>
+    <string name="gallery_camera_bucket_name">Camera pictures</string>
+    <string name="gallery_camera_videos_bucket_name">Camera videos</string>
+    <string name="get_bound_service_pro">get bound service pro</string>
+    <string name="getback_failed">取回失败</string>
+    <string name="getback_succeed">取回成功</string>
+    <string name="grayscale">Grayscale</string>
+    <string name="handle_failed">处理失败</string>
+    <string name="handle_item_failed_to_no_permission">权限不足，无法处理事项</string>
+    <string name="hello">Hello World, PullToRefreshActivity!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="histogram">Histogram</string>
+    <string name="home">Go home</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="image_content">Image</string>
+    <string name="image_file_name_format" translatable="false">"'IMG'_yyyyMMdd_HHmmss"</string>
+    <string name="imagecache_demo_activity_title">ImageCache Demo</string>
+    <string name="imagesdcardcache_demo_activity_title">ImageSDCardCache Demo</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="intent_demo_activity_title">Intent Demo</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="io_exception_error">文件流异常</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="ipaddr">http://oa.dynastech.com:8000</string>
+    <string name="item_do">已办事项</string>
+    <string name="item_menu">菜单</string>
+    <string name="item_undo">待办事项</string>
+    <string name="items_done">批事项</string>
+    <string name="keydown_double_to_exit">再按一次退出程序</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="load_empty">暂无数据</string>
+    <string name="load_error">加载数据出错</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="load_failed_img">加载图片失败...</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="load_full">已加载全部</string>
+    <string name="load_ing">加载中···</string>
+    <string name="load_more">更多</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="loader_cursor_support">Loader/Cursor</string>
+    <string name="loader_custom_support">Loader/Custom</string>
+    <string name="loader_throttle_support">Loader/Throttle</string>
+    <string name="local_audio">Play Audio from Local File</string>
+    <string name="local_video">Play Video from Local File</string>
+    <string name="login">登录</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="login_error">登录失败,请检查用户名或者密码是否正确</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="logo_text">统一协同办公系统</string>
+    <string name="logout">注销</string>
+    <string name="main_tab">主页</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="menu_settings">Settings</string>
+    <string name="mosaic">Mosaic</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="msg_load_image_fail">图片加载失败</string>
+    <string name="msg_load_is_null">读取失败，可能已被删除</string>
+    <string name="msg_load_userface_fail">用户头像加载失败</string>
+    <string name="msg_login_addr_null">请输入服务器地址</string>
+    <string name="msg_login_email_error">无效的邮箱地址</string>
+    <string name="msg_login_email_null">请输入邮箱</string>
+    <string name="msg_login_error">用户未登录 或 密码错误</string>
+    <string name="msg_login_fail">登录失败</string>
+    <string name="msg_login_pwd_null">请输入密码</string>
+    <string name="msg_login_success">登录成功</string>
+    <string name="msg_login_username_null">请输入用户名</string>
+    <string name="msg_main_error">数据获取失败,下拉刷新试试</string>
+    <string name="msg_noaccess_delete">您没有删除权限</string>
+    <string name="msg_read_detail_fail">无法获取文章信息</string>
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="new_data_toast_message">有 %d 条更新</string>
+    <string name="new_data_toast_none">没有新更新</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="new_fragment">New fragment</string>
+    <string name="no_lync">找不到lync程序，请下载lync！</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    <string name="no_sdcard">sd卡未挂载</string>
+    <string name="no_storage" product="nosdcard">Please mount USB storage before using the camera.</string>
+    <string name="no_support_attachment">不支持打开该格式的附件</string>
+    <string name="no_support_pdf">不支持打开PDF格式</string>
+    <string name="no_tel_to_call">没有电话可拨打</string>
+    <string name="not_enough_space" product="nosdcard">Your USB storage is full.</string>
+    <string name="note_not_update">尚未更新</string>
+    <string name="note_pull_down">下拉可以刷新…</string>
+    <string name="note_pull_loading">加载中…</string>
+    <string name="note_pull_refresh">松开即可刷新…</string>
+    <string name="note_update_at">更新于：%1$s</string>
+    <string name="operate_bound_service">operate_bound service</string>
+    <string name="original">Original</string>
+    <string name="packagename">com.donggu.actpoint</string>
+    <string name="passoword">密码:</string>
+    <string name="permission_group_tools_description">Access Vitamio package and resources.</string>
+    <string name="permission_group_tools_label">Vitamio tools</string>
+    <string name="permission_receive_messages_description">Receive all broadcasts from Vitamio service.</string>
+    <string name="permission_receive_messages_label">Receive Vitamio messages</string>
+    <string name="permission_write_providers_description">Delete, update or create new items in Vitamio providers.
+</string>
+    <string name="permission_write_providers_label">Write Vitamio providers</string>
+    <string name="pref_camcorder_settings_category">Camcorder settings</string>
+    <string name="pref_camera_coloreffect_default" translatable="false">none</string>
+    <string name="pref_camera_coloreffect_entry_aqua">Aqua</string>
+    <string name="pref_camera_coloreffect_entry_bluetint">Blue tint</string>
+    <string name="pref_camera_coloreffect_entry_greentint">Green tint</string>
+    <string name="pref_camera_coloreffect_entry_mono">Mono</string>
+    <string name="pref_camera_coloreffect_entry_mosaic">Mosaic</string>
+    <string name="pref_camera_coloreffect_entry_negative">Negative</string>
+    <string name="pref_camera_coloreffect_entry_none">None</string>
+    <string name="pref_camera_coloreffect_entry_pastel">Pastel</string>
+    <string name="pref_camera_coloreffect_entry_posterize">Posterize</string>
+    <string name="pref_camera_coloreffect_entry_redtint">Red tint</string>
+    <string name="pref_camera_coloreffect_entry_sepia">Sepia</string>
+    <string name="pref_camera_coloreffect_entry_solarize">Solarize</string>
+    <string name="pref_camera_coloreffect_title">Color effect</string>
+    <string name="pref_camera_flashmode_default" translatable="false">auto</string>
+    <string name="pref_camera_flashmode_entry_auto">Auto</string>
+    <string name="pref_camera_flashmode_entry_off">Off</string>
+    <string name="pref_camera_flashmode_entry_on">On</string>
+    <string name="pref_camera_flashmode_no_flash" translatable="false">no_flash</string>
+    <string name="pref_camera_flashmode_title">Flash mode</string>
+    <string name="pref_camera_focusmode_default" translatable="false">auto</string>
+    <string name="pref_camera_focusmode_entry_auto">Auto</string>
+    <string name="pref_camera_focusmode_entry_infinity">Infinity</string>
+    <string name="pref_camera_focusmode_entry_macro">Macro</string>
+    <string name="pref_camera_focusmode_title">Focus mode</string>
+    <string name="pref_camera_id_default" translatable="false">0</string>
+    <string name="pref_camera_id_entry_back">Back</string>
+    <string name="pref_camera_id_entry_front">Front</string>
+    <string name="pref_camera_id_title">Select camera</string>
+    <string name="pref_camera_jpegquality_default" translatable="false">superfine</string>
+    <string name="pref_camera_jpegquality_entry_fine">Fine</string>
+    <string name="pref_camera_jpegquality_entry_normal">Normal</string>
+    <string name="pref_camera_jpegquality_entry_superfine">Super fine</string>
+    <string name="pref_camera_jpegquality_title">Picture quality</string>
+    <string name="pref_camera_picturesize_entry_1024x768">1M Pixels</string>
+    <string name="pref_camera_picturesize_entry_1600x1200">2M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2048x1536">3M Pixels</string>
+    <string name="pref_camera_picturesize_entry_2592x1936">5M Pixels</string>
+    <string name="pref_camera_picturesize_entry_320x240" translatable="false">QVGA</string>
+    <string name="pref_camera_picturesize_entry_640x480" translatable="false">VGA</string>
+    <string name="pref_camera_picturesize_title">Picture size</string>
+    <string name="pref_camera_recordlocation_default" translatable="false">none</string>
+    <string name="pref_camera_recordlocation_entry_off">Off</string>
+    <string name="pref_camera_recordlocation_entry_on">On</string>
+    <string name="pref_camera_recordlocation_title">Store location</string>
+    <string name="pref_camera_scenemode_default" translatable="false">auto</string>
+    <string name="pref_camera_scenemode_entry_action">Action</string>
+    <string name="pref_camera_scenemode_entry_auto">Auto</string>
+    <string name="pref_camera_scenemode_entry_beach">Beach</string>
+    <string name="pref_camera_scenemode_entry_candlelight">Candlelight</string>
+    <string name="pref_camera_scenemode_entry_fireworks">Fireworks</string>
+    <string name="pref_camera_scenemode_entry_landscape">Landscape</string>
+    <string name="pref_camera_scenemode_entry_night">Night</string>
+    <string name="pref_camera_scenemode_entry_night_portrait">Night portrait</string>
+    <string name="pref_camera_scenemode_entry_party">Party</string>
+    <string name="pref_camera_scenemode_entry_portrait">Portrait</string>
+    <string name="pref_camera_scenemode_entry_snow">Snow</string>
+    <string name="pref_camera_scenemode_entry_steadyphoto">Steady photo</string>
+    <string name="pref_camera_scenemode_entry_sunset">Sunset</string>
+    <string name="pref_camera_scenemode_entry_theatre">Theatre</string>
+    <string name="pref_camera_scenemode_title">Scene mode</string>
+    <string name="pref_camera_settings_category">Camera settings</string>
+    <string name="pref_camera_video_flashmode_default" translatable="false">off</string>
+    <string name="pref_camera_whitebalance_default" translatable="false">auto</string>
+    <string name="pref_camera_whitebalance_entry_auto">Auto</string>
+    <string name="pref_camera_whitebalance_entry_cloudy">Cloudy</string>
+    <string name="pref_camera_whitebalance_entry_daylight">Daylight</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent">Fluorescent</string>
+    <string name="pref_camera_whitebalance_entry_incandescent">Incandescent</string>
+    <string name="pref_camera_whitebalance_title">White balance</string>
+    <string name="pref_exposure_default" translatable="false">0</string>
+    <string name="pref_exposure_title">Exposure</string>
+    <string name="pref_restore_detail">Restore defaults</string>
+    <string name="pref_restore_title">Camera settings</string>
+    <string name="pref_video_quality_default" translatable="false">high</string>
+    <string name="pref_video_quality_entry_high">High (30m)</string>
+    <string name="pref_video_quality_entry_low">Low (30m)</string>
+    <string name="pref_video_quality_entry_mms">MMS (Low, 30s)</string>
+    <string name="pref_video_quality_entry_youtube">YouTube (High, 10m)</string>
+    <string name="pref_video_quality_title">Video quality</string>
+    <string name="preparing_sd" product="nosdcard">Preparing USB storage\u2026</string>
+    <string name="profile">Profile: </string>
+    <string name="progress_tip">download tip:</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="publishing">发布中...</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/pull_refresh_strings.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_release_label">释放刷新...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新...</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="republish_tweet">网络超时，是否重新发布动弹？</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="res_audio">Play Audio from Resources</string>
+    <string name="review_cancel">CANCEL</string>
+    <string name="review_ok">OK</string>
+    <string name="review_play">PLAY</string>
+    <string name="review_retake">RETAKE</string>
+    <string name="rollback_failed">回退失败</string>
+    <string name="save_data_failed">数据保存成功</string>
+    <string name="save_data_succeed">数据保存失败</string>
+    <string name="save_img_failed_to_no_sdcard">无法保存图片，请检查SD卡是否挂载</string>
+    <string name="save_tape_failed_to_no_sdcard">无法保存录音，请检查SD卡是否挂载</string>
+    <string name="save_video_failed_to_no_sdcard">无法保存视频，请检查SD卡是否挂载</string>
+    <string name="search">搜索</string>
+    <string name="search_view_demo_activity_title">SearchView Demo</string>
+    <string name="searchnull">没有数据</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="select">选择</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="send_general_broadcast">send general broadcast</string>
+    <string name="send_local_broadcast">send local broadcast</string>
+    <string name="send_ordered_broadcast">send ordered broadcast</string>
+    <string name="send_sticky_broadcast">send sticky broadcast</string>
+    <string name="sepia">Sepia</string>
+    <string name="service_demo_activity_title">Service Demo</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="share">分享</string>
+    <string name="sharing">分享中...</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="sign_failed">签到失败,请重新尝试</string>
+    <string name="sign_succeed">签到成功</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="sinalogin_check_account">账号不能为空</string>
+    <string name="sinalogin_check_pass">密码不能为空</string>
+    <string name="sinalogin_check_server">服务器验证中...</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="slide_one_page_gallery_demo_activity_title">Slide One Page Gallery Demo</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="spaceIsLow_content" product="nosdcard">Your USB storage is running out of space. Change the quality setting or delete some images or other files.</string>
+    <string name="start_aidl_service">start aidl service</string>
+    <string name="start_general_service">start general service</string>
+    <string name="start_intent_service">start intent service</string>
+    <string name="stop_aidl_service">stop aidl service</string>
+    <string name="stop_general_service">stop_general service</string>
+    <string name="stream_video">Play Streaming Video</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="submit_report">提交报告</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="subtitle1">MediaPlayer  Subtitles</string>
+    <string name="subtitle12">VideoView Subtitles</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="sure">确定</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="switch_camera_id">Switch Camera</string>
+    <string name="switch_to_camera_lable">Switch to camera</string>
+    <string name="switch_to_video_lable">Switch to video</string>
+    <string name="threshhold">Threshold</string>
+    <string name="tip_download_file">file will be saved to sdcard, the path is: </string>
+    <string name="title_activity_adidas">Adidas</string>
+    <string name="title_activity_media_player_subtitle">MediaPlayerSubtitle</string>
+    <string name="title_activity_video_buffer">VideoBuffer</string>
+    <string name="title_activity_video_subtitle_demo">VideoSubtitleDemo</string>
+    <string name="title_activity_video_subtitle_list">VideoSubtitleList</string>
+    <string name="title_activity_video_view_subtitle">VideoViewSubtitle</string>
+    <string name="unbound_service">unbound service</string>
+    <string name="update_at">updated at: </string>
+    <string name="upload_attachment_failed_to_no_network">网络连接失败,不能上传附件</string>
+    <string name="upload_attachment_failed_to_no_permission">没有权限,不能上传附件</string>
+    <string name="upload_failed">附件上传失败</string>
+    <string name="upload_succeed">附件上传完成</string>
+    <string name="username">用户名:</string>
+    <string name="validate">加载中...</string>
+    <string name="video_camera_label">Camcorder</string>
+    <string name="video_file_name_format" translatable="false">"'VID'_yyyyMMdd_HHmmss"</string>
+    <string name="video_reach_size_limit">Size limit reached.</string>
+    <string name="view_pager_demo_activity_title">ViewPager Demo</string>
+    <string name="view_pager_multi_fragment_demo_activity_title">ViewPager Multi Fragment Demo</string>
+    <string name="vitamio_demo_name">VitamioDemo</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="vitamio_library_app_name">VitamioLibrary</string>
+    <string name="wait">Please wait\u2026</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/messages.xml -->
+    <eat-comment/>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="zoom_control_title">Zoom</string>
+    <!-- From: file:/E:/WorkSpace/OAkong/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Animation_OnScreenHint">
+        <item name="android:windowEnterAnimation">@anim/on_screen_hint_enter</item>
+        <item name="android:windowExitAnimation">@anim/on_screen_hint_exit</item>
+    </style>
+    <style name="Animations"/>
+    <style name="Animations.PopDownMenu"/>
+    <style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+    <style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+    <style name="Animations.PopDownMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+    <style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+    <style name="Animations.PopUpMenu"/>
+    <style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+    <style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+    <style name="Animations.PopUpMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+    <style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+    <style name="CallingKey">
+		<item name="android:textSize">20sp</item>
+	</style>
+    <style name="ChattingUIContent">
+		<item name="android:orientation">horizontal</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+    <style name="ChattingUISplit">
+		<item name="android:textSize">13.0dip</item>
+		<item name="android:textColor">#ff56616c</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:background">@null</item>
+		<item name="android:paddingTop">11.0dip</item>
+		<item name="android:paddingBottom">6.0dip</item>
+		<item name="android:visibility">gone</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+    <style name="ChattingUIText">
+		<item name="android:textSize">15.0dip</item>
+		<item name="android:textColor">#ff000000</item>
+		<item name="android:gravity">left|center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:maxWidth">200.0dip</item>
+		<item name="android:minHeight">15.0dip</item>
+		<item name="android:lineSpacingExtra">2.0dip</item>
+	</style>
+    <style name="ChattingUIVoiceLength">
+		<item name="android:textSize">@dimen/SmallTextSize</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">#ff6f7b85</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">3.0dip</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:shadowColor">#80ffffff</item>
+		<item name="android:shadowDx">1.4</item>
+		<item name="android:shadowDy">1.4</item>
+		<item name="android:shadowRadius">1.0</item>
+	</style>
+    <style name="CroperButton" parent="@style/MMButton">
+		<item name="android:gravity">center</item>
+		<item name="android:background">@null</item>
+	</style>
+    <style name="HorizScrollViewItem">
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:text">Sample Item</item>
+    </style>
+    <style name="ListView" parent="@android:style/Widget.ListView">
+		<item name="android:listSelector">@drawable/keyboard_listview_bg</item>
+		<item name="android:cacheColorHint">#00000000</item>
+		<item name="android:divider">#33000000</item>
+		<item name="android:dividerHeight">1.0px</item>
+	</style>
+    <style name="MMButton">
+		<item name="android:textSize">16.0dip</item>
+		<item name="android:background">@drawable/mm_btn</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:minWidth">40.0dip</item>
+		<item name="android:minHeight">40.0dip</item>
+	</style>
+    <style name="MMSplit">
+		<item name="android:gravity">center</item>
+		<item name="android:background">@null</item>
+		<item name="android:layout_width">8.0dip</item>
+		<item name="android:layout_height">5.0dip</item>
+	</style>
+    <style name="MMTheme.Basic" parent="@android:style/Theme">
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowTitleSize">40.0dip</item>
+		<item name="android:windowSoftInputMode">stateHidden</item>
+		<item name="android:windowTitleBackgroundStyle">@style/MMTitleStyle</item>
+
+	</style>
+    <style name="MMTitleStyle">
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:background">@drawable/bg_topbar</item>
+	</style>
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/checkbox_selector</item>
+		<item name="android:paddingLeft">25.0dip</item>
+		<item name="android:maxHeight">10.0dip</item>
+	</style>
+    <style name="NavPage">
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:background">#ffe9e9e9</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	</style>
+    <style name="NoActionBar" parent="android:Theme.Holo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="NumberKeyLarge">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:textSize">32sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+    <style name="NumberKeySmall">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:textSize">10sp</item>
+	</style>
+    <style name="OnScreenHintTextAppearance">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="OnScreenHintTextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/secondary_text_dark</item>
+    </style>
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photogrid_list_selector</item>
+    </style>
+    <style name="RegCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/reg_checkbox_selector</item>
+		<item name="android:paddingLeft">15.0dip</item>
+		<item name="android:maxHeight">10.0dip</item>
+	</style>
+    <style name="ReviewControlGroup">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="ReviewControlIcon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/btn_camera_review</item>
+    </style>
+    <style name="ReviewControlText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="RotateButton">
+		<item name="android:background">@drawable/mm_rotate_btn</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+    <style name="ZoomInButton">
+		<item name="android:background">@drawable/mm_zoomin_btn</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+    <style name="ZoomOutButton">
+		<item name="android:background">@drawable/mm_zoomout_btn</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+    <style name="all_missed_topbar">
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_width">70dp</item>
+		<item name="android:textSize">14.0sp</item>
+		<item name="android:lines">1</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+    <style name="call_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+    <style name="capture_image_attr">
+            <item name="android:layout_width">fill_parent</item>
+            <item name="android:layout_height">fill_parent</item>
+        </style>
+    <style name="drop_down_list_footer_font_style">
+        <item name="android:textColor">@color/drop_down_list_footer_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="drop_down_list_footer_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+    </style>
+    <style name="drop_down_list_header_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="drop_down_list_header_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+    </style>
+    <style name="drop_down_list_header_second_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_second_font_color</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    <style name="footbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>  
+        <item name="android:paddingTop">@dimen/space_1</item>
+        <item name="android:paddingBottom">@dimen/space_3</item>
+    </style>
+    <style name="main_footbar_radio" parent="footbar">
+        <item name="android:background">@null</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    <style name="maintab_bottom_t">
+		<item name="android:textSize">10sp</item>
+	</style>
+    <style name="more_item_background">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="translucent" parent="android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+	</style>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+     android:background="@color/white"
+    >
+
+     <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/role_list_item" 
+        />
+   <!--<FrameLayout 
+   
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+   	android:id="@+id/section_title_all"
+   	android:background="#CFCFCF"
+    >
+    <TextView android:layout_width="fill_parent"
+        	  android:layout_height="40dp"
+        	  android:textColor="@color/black"
+        	  android:textSize="15sp"
+        	  android:gravity="center_vertical"
+        	  android:paddingLeft="10dp"
+        	  android:id="@+id/section_title"
+        	  android:text="hello world"	
+        />
+    <ImageView android:layout_width="wrap_content"
+        	   android:layout_height="wrap_content"
+        	   android:layout_gravity="right|center_vertical"
+        	   android:id="@+id/role_section_icon"	
+        	   android:background="@drawable/ap_groupcollapse"
+        />
+</FrameLayout>-->
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/section_content_all"
+	    >
+	    <RadioButton android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:id="@+id/role_checked"
+	        	android:focusable="false"      
+           		android:clickable="false"           
+	        	android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        	  android:layout_width="fill_parent"
+	        	  android:layout_height="40dp"
+	        	  android:id="@+id/role_name"
+	        	  android:layout_toRightOf="@id/role_checked"
+	        	  android:layout_centerVertical="true"
+	        	  android:gravity="center_vertical"
+	        	  android:paddingLeft="10dp"
+	        	  android:textColor="@color/black"
+	        />
+	    
+	</RelativeLayout>
+</LinearLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/role_item_content.xml -->

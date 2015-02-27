@@ -7,7 +7,7 @@ import android.util.Log;
 
 import com.dynastech.oa.AppException;
 import com.dynastech.oa.beans.LzList;
-import com.dynastech.oa.ui.util.JsonUtils;
+import com.dynastech.oa.utils.JsonUtils;
 import com.google.gson.reflect.TypeToken;
 
 public class CategoryData extends Entity{

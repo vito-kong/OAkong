@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/cn.trinea.android.demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.trinea.android.common.view.DropDownListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:paddingBottom="@dimen/dp_40"
+         />
+
+    <include layout="@layout/trinea_info" />
+
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/drop_down_listview_demo.xml -->

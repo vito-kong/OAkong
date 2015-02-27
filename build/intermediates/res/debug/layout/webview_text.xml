@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        	 android:layout_width="fill_parent"
+        	 android:layout_height="fill_parent"
+        	 android:scrollbars="horizontal|vertical"
+        	 android:id="@+id/text_webview"
+        	 android:fitsSystemWindows="true"
+        	 
+        /> 
+     <!--<com.handmark.pulltorefresh.library.PullToRefreshWebView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/text_webview"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        ptr:ptrMode="both" />-->
+    
+<!-- From: file:/E:/WorkSpace/OAkong/res/layout/webview_text.xml -->

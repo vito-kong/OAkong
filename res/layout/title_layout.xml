@@ -37,5 +37,13 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/ic_action_accept"
         android:visibility="gone" />
+      <Button
+        android:id="@+id/goback_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/goback_home"
+        android:visibility="gone" />
 
 </FrameLayout>

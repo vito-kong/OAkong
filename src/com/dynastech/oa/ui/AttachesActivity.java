@@ -32,8 +32,8 @@ import com.dynastech.oa.ui.adapter.NewUploadAttachAdapter;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.Attachment;
 import com.dynastech.oa.ui.entity.User;
-import com.dynastech.oa.ui.util.ToolUtils;
 import com.dynastech.oa.utils.HttpUtils;
+import com.dynastech.oa.utils.ToolUtils;
 import com.dynastech.oa.utils.URLS;
 import com.u1aryz.android.lib.newpopupmenu.MenuItem;
 import com.u1aryz.android.lib.newpopupmenu.PopupMenu;
@@ -144,7 +144,7 @@ public class AttachesActivity extends BaseActivity implements OnClickListener,
 				disIntentImageActivity(url, filename);
 			
 			} else {
-				Toast.makeText(context, "不支持打开该格式的附件", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.no_support_attachment, Toast.LENGTH_SHORT).show();
 			}
 			break;
 		

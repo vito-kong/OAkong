@@ -53,7 +53,6 @@ import org.apache.http.util.EntityUtils;
 
 import com.dynastech.oa.AppContext;
 import com.dynastech.oa.ui.entity.Downloader;
-import com.dynastech.oa.ui.util.NetWorkHelper;
 
 import android.content.Context;
 import android.util.Log;

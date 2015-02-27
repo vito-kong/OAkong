@@ -14,7 +14,7 @@ import it.sephiroth.android.library.imagezoom.test.utils.DecodeUtils;
 import com.dynastech.oa.R;
 import com.dynastech.oa.ui.ImageCapture2.ImageCompressTask;
 import com.dynastech.oa.ui.common.Constant;
-import com.dynastech.oa.ui.util.MediaUtils;
+import com.dynastech.oa.utils.MediaUtils;
 
 import android.app.ProgressDialog;
 import android.content.res.Configuration;
@@ -94,7 +94,7 @@ public class ImageCapture extends BaseActivity implements OnClickListener {
 					ImageViewTouchBase.ZOOM_INVALID);
 			
 		} else {
-			Toast.makeText(this, "加载图片失败...", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, R.string.load_failed_img, Toast.LENGTH_LONG).show();
 		}
 		progressBar.setVisibility(View.GONE);
 	}

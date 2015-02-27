@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg" >
+
+    <FrameLayout
+        android:id="@+id/category_item_iconlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/category_item_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" 
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            />
+
+        <ProgressBar
+            android:id="@+id/category_item_iconprogress"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/categoty_item_add"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bq_inlist"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/categoty_item_new"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/category_item_new"
+        android:visibility="invisible" />
+
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/categoty_item_new"
+        android:layout_toRightOf="@id/category_item_iconlayout"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/categoty_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" 
+            android:paddingRight="30dp"
+            />
+
+        <TextView
+            android:id="@+id/categoty_item_vicetitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12sp" 
+            android:layout_marginTop="10dp"
+            android:paddingRight="30dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/arrow"
+         />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CCC" />
+
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/categoty_list.xml -->

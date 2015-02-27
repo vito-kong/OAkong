@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/dialog_bg"
+    android:id="@+id/alert_all"
+    >
+    <FrameLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/deal_prompt"
+    	>
+    
+    <TextView android:layout_width="fill_parent"
+        	  android:layout_height="wrap_content"
+        	  android:textColor="@android:color/white"
+        	  android:textSize="15sp"
+        	  android:text="处理提示"
+ 			  android:gravity="center_vertical"
+ 			  android:paddingLeft="80dp"
+        	  android:background="@drawable/ap_dialog_title_info"
+       			
+        />
+    <ImageView android:layout_width="38dp"
+        	   android:layout_height="38dp"
+        	   android:background="@drawable/ap_dialog_info"
+        	   android:id="@+id/alert_icon"	 
+        	   android:layout_marginLeft="30dp"
+        />
+    </FrameLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        		  	android:layout_height="200dp"
+        		  	android:layout_below="@id/deal_prompt"
+        		  	
+        >
+        <TextView android:layout_width="fill_parent"
+            	  android:layout_height="30dp"
+            	  android:textSize="15sp"
+            	  android:textColor="@color/blue_sky"	
+            	  android:gravity="center"
+            	  android:id="@+id/alert_affirm_title"
+            	  android:layout_marginTop="10dp"
+            	 
+            	  
+            />
+        <TextView android:layout_width="fill_parent"
+            	  android:layout_height="40dp"
+            	  android:text="hello world"
+            	  android:textSize="13sp"
+            	  android:gravity="center"
+            	  android:textColor="@android:color/black"
+            	  android:layout_below="@id/alert_affirm_title"	
+            	  android:layout_marginTop="10dp"
+            	  android:id="@+id/alert_result"
+            	  android:visibility="invisible"
+            />
+      	
+          <TextView android:layout_width="fill_parent"
+            	  android:layout_height="40dp"
+            	  android:text="hello world3"
+            	  android:textSize="13sp"
+            	  android:gravity="center"
+            	  android:textColor="@android:color/black"
+            	  android:layout_below="@id/alert_result"	
+            	  android:layout_marginTop="10dp"
+            	  android:id="@+id/alert_users"
+            	  android:visibility="invisible"
+            />
+          <Button android:layout_height="35dp"
+    		    	android:layout_width="80dp"
+    		    	android:text="取消"
+    		    	android:gravity="center"
+    		    	android:background="@drawable/ap_dialog_cancel"	
+    		    	android:id="@+id/alert_cancel"
+    		    	android:layout_alignParentBottom="true"
+                	android:textSize="12sp"	
+                	android:textColor="@color/black"
+                	android:layout_marginLeft="50dp" 
+                	android:layout_marginBottom="20dp"      	
+                		    />
+		 <Button android:layout_height="35dp"
+       		    	android:layout_width="80dp"
+       		    	android:text="确定"
+       		    	android:gravity="center"
+       		    	android:background="@drawable/ap_dialog_ok"
+       		    	android:layout_alignParentRight="true"
+       		    	android:layout_alignParentBottom="true"
+       		    	android:layout_marginRight="50dp"
+       		    	android:id="@+id/alert_ok"
+       		    	android:textSize="12sp"	
+       		    	android:textColor="@color/black"   	
+       		    	android:layout_marginBottom="20dp"   
+                		    />
+            
+        
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/alert_dialog.xml -->

@@ -5,7 +5,7 @@ import java.util.Map;
 import com.dynastech.oa.AppException;
 import com.dynastech.oa.ui.api.ApiClient;
 import com.dynastech.oa.ui.entity.LoginGson;
-import com.dynastech.oa.ui.util.JsonUtils;
+import com.dynastech.oa.utils.JsonUtils;
 
 import android.os.AsyncTask;
 import android.os.Handler;

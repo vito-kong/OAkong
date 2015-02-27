@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+    android:id="@+id/section_content_all"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+    <CheckBox
+        android:id="@+id/branch_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:focusable="false"
+      />
+
+    <TextView
+        android:id="@+id/branch_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:paddingLeft="10dp" 
+        android:textColor="@color/black"
+        />
+</LinearLayout>
+    
+     
+</LinearLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/select_user_item.xml -->

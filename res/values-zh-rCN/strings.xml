@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  Copyright (C) 2007 The Android Open Source Project
+<!--
+      Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -12,10 +13,10 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
- -->
+-->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <string name="camera_error_title" msgid="6484667504938477337">"相机故障"</string>
     <string name="cannot_connect_camera" msgid="8029009101380114174">"无法连接到相机。"</string>
     <string name="camera_label" msgid="6346560772074764302">"相机"</string>
@@ -23,14 +24,14 @@
     <string name="gallery_camera_bucket_name" msgid="2924618424339240831">"用相机拍摄的照片"</string>
     <string name="gallery_camera_videos_bucket_name" msgid="3369151581398551623">"用相机拍摄的视频"</string>
     <string name="wait" msgid="8600187532323801552">"请稍候..."</string>
-    <string name="no_storage" product="nosdcard" msgid="5876548364041592119">"请先装载 USB 存储设备，再使用相机。"</string>
-    <string name="no_storage" product="default" msgid="820691042667338625">"使用相机前请先插入 SD 卡。"</string>
-    <string name="not_enough_space" product="nosdcard" msgid="6452370395538050134">"您的 USB 存储设备空间已满。"</string>
-    <string name="not_enough_space" product="default" msgid="6655334407957844653">"SD 卡已满。"</string>
-    <string name="preparing_sd" product="nosdcard" msgid="6104019983528341353">"正在准备 USB 存储设备..."</string>
-    <string name="preparing_sd" product="default" msgid="2914969119574812666">"正在准备 SD 卡..."</string>
-    <string name="access_sd_fail" product="nosdcard" msgid="7361816489339518850">"访问 USB 存储设备失败。"</string>
-    <string name="access_sd_fail" product="default" msgid="4427585260986849912">"无法访问 SD 卡。"</string>
+    <string name="no_storage" msgid="5876548364041592119" product="nosdcard">"请先装载 USB 存储设备，再使用相机。"</string>
+    <string name="no_storage" msgid="820691042667338625" product="default">"使用相机前请先插入 SD 卡。"</string>
+    <string name="not_enough_space" msgid="6452370395538050134" product="nosdcard">"您的 USB 存储设备空间已满。"</string>
+    <string name="not_enough_space" msgid="6655334407957844653" product="default">"SD 卡已满。"</string>
+    <string name="preparing_sd" msgid="6104019983528341353" product="nosdcard">"正在准备 USB 存储设备..."</string>
+    <string name="preparing_sd" msgid="2914969119574812666" product="default">"正在准备 SD 卡..."</string>
+    <string name="access_sd_fail" msgid="4427585260986849912" product="default">"无法访问 SD 卡。"</string>
+    <string name="access_sd_fail" msgid="7361816489339518850" product="nosdcard">"访问 USB 存储设备失败。"</string>
     <string name="confirm_restore_title" msgid="1229914538263792180">"还原默认设置"</string>
     <string name="confirm_restore_message" msgid="5239464943578877295">"相机设置将还原为默认值。"</string>
     <string name="review_play" msgid="6015456244323302817">"播放"</string>
@@ -107,19 +108,16 @@
     <string name="pref_restore_detail" msgid="5732490002291044791">"还原默认设置"</string>
     <string name="pref_exposure_title" msgid="1229093066434614811">"曝光"</string>
     <string name="details_ok" msgid="6848594369924424312">"确定"</string>
-    <string name="spaceIsLow_content" product="nosdcard" msgid="4401325203349203177">"USB 存储设备空间不足，请更改照片品质设置，或删除某些照片或者其他文件。"</string>
-    <string name="spaceIsLow_content" product="default" msgid="1732882643101247179">"SD 卡空间不足，请更改照片品质设置，或删除某些照片或者其他文件。"</string>
+    <string name="spaceIsLow_content" msgid="1732882643101247179" product="default">"SD 卡空间不足，请更改照片品质设置，或删除某些照片或者其他文件。"</string>
+    <string name="spaceIsLow_content" msgid="4401325203349203177" product="nosdcard">"USB 存储设备空间不足，请更改照片品质设置，或删除某些照片或者其他文件。"</string>
     <string name="video_reach_size_limit" msgid="6179877322015552390">"已达到大小上限。"</string>
     <string name="zoom_control_title" msgid="6532562653386981815">"缩放"</string>
     <string name="switch_to_camera_lable" msgid="8248495141797448471">"切换到相机"</string>
     <string name="switch_to_video_lable" msgid="4525451949497982385">"切换到视频"</string>
-    
-    
-     <string name="send_general_broadcast">发送广播</string>
+    <string name="send_general_broadcast">发送广播</string>
     <string name="send_local_broadcast">发送Local广播</string>
     <string name="send_ordered_broadcast">发送有序广播</string>
     <string name="send_sticky_broadcast">发送Sticky广播</string>
-    
     <string name="start_general_service">启动普通服务</string>
     <string name="stop_general_service">停止普通服务</string>
     <string name="start_intent_service">启动Intent Service</string>
@@ -129,7 +127,6 @@
     <string name="unbound_service">解除绑定服务</string>
     <string name="start_aidl_service">启动AIDL服务</string>
     <string name="stop_aidl_service">停止AIDL服务</string>
-    
     <string name="app_status_download">点击下载美丽说APK</string>
     <string name="app_status_downloaded">已下载过，点击重新下载</string>
     <string name="app_status_download_fail">下载失败，点击重新下载</string>
@@ -141,12 +138,9 @@
     <string name="app_status_pause">暂停</string>
     <string name="app_status_downloading">下载中</string>
     <string name="tip_download_file">文件将下载到：</string>
-    
     <string name="update_at">更新于:&#160;</string>
-    
     <string name="profile">个人主页:&#160;</string>
     <string name="description">更多介绍:&#160;</string>
-    
     <string name="desc_search_view">SearchView介绍及搜索提示实现</string>
     <string name="desc_view_pager_multi_page">viewpager实现画廊效果</string>
     <string name="desc_download_manager">系统下载管理使用</string>
@@ -159,14 +153,13 @@
     <string name="desc_image_cache">ImageCache使用</string>
     <string name="desc_image_sdcard_cache">ImageSDCardCache使用</string>
     <string name="desc_default">Trinea</string>
-    
-       <string name="drop_down_list_header_default_text">点击可以刷新</string>
+    <string name="drop_down_list_header_default_text">点击可以刷新</string>
     <string name="drop_down_list_header_pull_text">下拉可以刷新</string>
     <string name="drop_down_list_header_release_text">松开可以刷新</string>
     <string name="drop_down_list_header_loading_text">加载中&#8230;</string>
     <string name="drop_down_list_footer_default_text">更多</string>
     <string name="drop_down_list_footer_loading_text">加载中&#8230;</string>
     <string name="drop_down_list_footer_no_more_text">没有更多了</string>
-    
     <string name="image_content">Image</string>
+
 </resources>

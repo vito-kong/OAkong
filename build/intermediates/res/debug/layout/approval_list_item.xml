@@ -1,0 +1,12 @@
+<TextView 
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="30dp"
+       android:background="@color/blue_sky"
+       android:id="@+id/approval_title"
+       android:gravity="center_vertical"
+       android:textColor="@color/black"
+       />
+		
+  
+<!-- From: file:/E:/WorkSpace/OAkong/res/layout/approval_list_item.xml -->

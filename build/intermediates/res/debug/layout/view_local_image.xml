@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cropimage_ll"
+    style="@style/NavPage"
+    android:background="#ff000000"
+    android:clickable="true" >
+
+    <FrameLayout
+        android:id="@+id/cropimage_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/cropimage_origin_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/cropimage_footer_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="10.0dip" 
+                android:visibility="gone"
+                >
+
+                <Button
+                    android:id="@+id/cropimage_rotate"
+                    style="@style/RotateButton" />
+
+                <View
+                    style="@style/MMSplit"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0" />
+
+                <Button
+                    android:id="@+id/zoomout"
+                    style="@style/ZoomOutButton" />
+
+                <View
+                    style="@style/MMSplit"
+                    android:layout_width="2.0dip" />
+
+                <Button
+                    android:id="@+id/zoomin"
+                    style="@style/ZoomInButton" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/mm_footer_img"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    style="@style/MMSplit"
+                    android:layout_weight="1.0" />
+
+                <Button
+                    android:id="@+id/nav_confirm"
+                    style="@style/CroperButton"
+                    android:background="@drawable/img_comfirm_btn"
+                    android:text="确认" />
+
+                <View
+                    style="@style/MMSplit"
+                    android:layout_weight="1.0" />
+
+                <Button
+                    android:id="@+id/nav_back"
+                    style="@style/CroperButton"
+                    android:background="@drawable/img_back_btn"
+                    android:text="取消" />
+
+                <View
+                    style="@style/MMSplit"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/view_local_image.xml -->

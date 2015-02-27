@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="handmark"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="popupmenu"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

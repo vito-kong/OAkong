@@ -57,7 +57,7 @@ import com.dynastech.oa.utils.URLS;
 /**
  * 网络操作
  * 为喵post就用apche的HttpClient，get就用Android的HttpURLConnection
- * {@link #com.dynastech.cdmetro.utils.HttpUtils}
+ * {@link #com.dynastech.oa.utils.HttpUtils}
  */
 public class ApiClient {
 
@@ -65,11 +65,11 @@ public class ApiClient {
 	public static final String DESC = "descend";
 	public static final String ASC = "ascend";
 
-	private final static int TIMEOUT_CONNECTION = 20000;
-	private final static int TIMEOUT_SOCKET = 20000;
-	private final static int RETRY_TIME = 3;
+	private final static int TIMEOUT_CONNECTION = 10000;
+	private final static int TIMEOUT_SOCKET = 10000;
+	private final static int RETRY_TIME = 2;
 	private static String tag = "ApiClient";
-	public static final int DEFAULT_SOCKET_TIMEOUT = 20000;
+	public static final int DEFAULT_SOCKET_TIMEOUT = 10000;
 	public static final int DEFAULT_HOST_CONNECTIONS = 50;
 	public static final int DEFAULT_MAX_CONNECTIONS = 100;
 	public static final int DEFAULT_SOCKET_BUFFER_SIZE = 1024 * 10;

@@ -30,8 +30,8 @@ import com.dynastech.oa.beans.BranchBean;
 import com.dynastech.oa.ui.adapter.NewBranchAdapter;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.User;
-import com.dynastech.oa.ui.util.JsonUtils;
 import com.dynastech.oa.utils.HttpUtils;
+import com.dynastech.oa.utils.JsonUtils;
 import com.dynastech.oa.utils.URLS;
 
 public class NewBranchActivity extends BaseActivity implements OnClickListener,
@@ -226,11 +226,11 @@ public class NewBranchActivity extends BaseActivity implements OnClickListener,
 
 				} else if ("0".equals(result)) {
 					// 保存失败
-					Toast.makeText(context, "数据保存失败", Toast.LENGTH_SHORT)
+					Toast.makeText(context, R.string.save_data_failed, Toast.LENGTH_SHORT)
 							.show();
 				}
 			} else {
-				Toast.makeText(context, "数据保存失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.save_data_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 	}

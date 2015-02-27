@@ -68,7 +68,7 @@ public class ContactListActivity extends BaseActivity {
 					adapter.notifyDataSetChanged();
 				}
 			} else {
-				Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT).show();
 			}
 		};
 	};
@@ -133,7 +133,7 @@ public class ContactListActivity extends BaseActivity {
 						ContactListActivity.this.context.startActivity(localIntent);
 						return;
 					}
-					Toast.makeText(ContactListActivity.this.context, "没有电话可拨打", 0)
+					Toast.makeText(ContactListActivity.this.context, R.string.no_tel_to_call, Toast.LENGTH_SHORT)
 							.show();
 				}
 

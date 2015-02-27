@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaCommon-2.0.3-jar-with-dependencies">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/JavaCommon-2.0.3-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

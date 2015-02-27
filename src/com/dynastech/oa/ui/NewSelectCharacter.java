@@ -9,7 +9,7 @@ import com.dynastech.oa.beans.UsersBean;
 import com.dynastech.oa.ui.adapter.NewSelectUserAdapter;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.GroupUserBean;
-import com.dynastech.oa.ui.util.JsonUtils;
+import com.dynastech.oa.utils.JsonUtils;
 
 import android.app.Activity;
 import android.content.Context;

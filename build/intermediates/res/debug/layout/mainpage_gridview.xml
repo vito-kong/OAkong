@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/mainpage_itemsize_width"
+    android:layout_height="@dimen/mainpage_itemsize_height"
+    android:background="#006B9F" >
+
+
+    <ImageView
+        android:id="@+id/lz_mainpage_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+             />
+
+    <TextView
+        android:id="@+id/lz_mainpage_newmsg"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/lz_new"
+        android:gravity="center"
+        android:textColor="@android:color/white" 
+        
+        />
+
+    <TextView
+        android:id="@+id/lz_mainpage_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" 
+        
+        />
+
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/mainpage_gridview.xml -->

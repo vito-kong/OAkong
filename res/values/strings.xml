@@ -2,7 +2,7 @@
 <resources>
 
     <string name="vitamio_demo_name">VitamioDemo</string>
-	<string name="local_video">Play Video from Local File</string>
+    <string name="local_video">Play Video from Local File</string>
     <string name="stream_video">Play Streaming Video</string>
     <string name="local_audio">Play Audio from Local File</string>
     <string name="res_audio">Play Audio from Resources</string>
@@ -14,8 +14,6 @@
     <string name="title_activity_video_view_subtitle">VideoViewSubtitle</string>
     <string name="title_activity_video_subtitle_list">VideoSubtitleList</string>
     <string name="title_activity_video_buffer">VideoBuffer</string>
-    
-    
     <string name="vitamio_library_app_name">VitamioLibrary</string>
     <string name="vitamio_init_decoders">Initializing decoders…</string>
     <string name="permission_group_tools_label">Vitamio tools</string>
@@ -24,15 +22,14 @@
     <string name="permission_receive_messages_description">Receive all broadcasts from Vitamio service.</string>
     <string name="permission_write_providers_label">Write Vitamio providers</string>
     <string name="permission_write_providers_description">Delete, update or create new items in Vitamio providers.
-    </string>
+</string>
     <string name="VideoView_error_title">Cannot play video</string>
     <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
         this device.
-    </string>
+</string>
     <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
     <string name="VideoView_error_button">OK</string>
     <string name="mediacontroller_play_pause">Play/Pause</string>
-    
     <string name="app_name">OA</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
@@ -59,10 +56,10 @@
     <string name="logout">注销</string>
     <string name="searchnull">没有数据</string>
     <string name="logo_text">统一协同办公系统</string>
-	<string name="attachs_play">打开</string>
-	<string name="attachs_download">下载</string>
-	<string name="attachs_delete">删除</string>
-	
+    <string name="attachs_play">打开</string>
+    <string name="attachs_download">下载</string>
+    <string name="attachs_delete">删除</string>
+
     <string-array name="menu">
         <item>待办事项</item>
         <item>已办事项</item>
@@ -86,14 +83,43 @@
     <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
     <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
     <string name="title_activity_adidas">Adidas</string>
+    <!-- toast -->
+    <string name="no_lync">找不到lync程序，请下载lync！</string>
+    <string name="keydown_double_to_exit">再按一次退出程序</string>
+    <string name="no_support_attachment">不支持打开该格式的附件</string>
+    <string name="no_support_pdf">不支持打开PDF格式</string>
+    <string name="data_complete">数据加载完成</string>
+    <string name="data_failed">数据获取失败</string>
+    <string name="no_tel_to_call">没有电话可拨打</string>
+    <string name="load_failed_img">加载图片失败...</string>
+    <string name="save_data_failed">数据保存成功</string>
+    <string name="save_data_succeed">数据保存失败</string>
+    <string name="save_video_failed_to_no_sdcard">无法保存视频，请检查SD卡是否挂载</string>
+    <string name="save_tape_failed_to_no_sdcard">无法保存录音，请检查SD卡是否挂载</string>
+    <string name="save_img_failed_to_no_sdcard">无法保存图片，请检查SD卡是否挂载</string>
+    <string name="handle_item_failed_to_no_permission">权限不足，无法处理事项</string>
+    <string name="upload_attachment_failed_to_no_permission">没有权限,不能上传附件</string>
+    <string name="upload_attachment_failed_to_no_network">网络连接失败,不能上传附件</string>
+    <string name="no_sdcard">sd卡未挂载</string>
+    <string name="rollback_failed">回退失败</string>
+    <string name="getback_failed">取回失败</string>
+    <string name="getback_succeed">取回成功</string>
+    <string name="upload_failed">附件上传失败</string>
+    <string name="upload_succeed">附件上传完成</string>
+    <string name="handle_failed">处理失败</string>
+    <string name="sign_failed">签到失败,请重新尝试</string>
+    <string name="sign_succeed">签到成功</string>
+    <string name="certain_terminal">你确定中止吗</string>
+    <string name="certain_reject">你确定回退吗</string>
+    <string name="certain_revocation">你确定撤销吗</string>
 
     <!-- General strings -->
-	<string name="attach_see">查看</string>
-	<string name="attach_delete">删除</string>
-	<string name="attach_download">下载</string>
-	<string name="attach_cancel">取消</string>
-	<string name="attach_pause">暂停</string>
-	<string name="attach_begin">开始</string>
+    <string name="attach_see">查看</string>
+    <string name="attach_delete">删除</string>
+    <string name="attach_download">下载</string>
+    <string name="attach_cancel">取消</string>
+    <string name="attach_pause">暂停</string>
+    <string name="attach_begin">开始</string>
     <!-- title for the dialog showing the error of camera hardware -->
     <string name="camera_error_title">Camera error</string>
 
@@ -117,23 +143,22 @@
 
     <!-- alert to the user that USB storage must be available before using the camera [CHAR LIMIT=NONE] -->
     <string name="no_storage" product="nosdcard">Please mount USB storage before using the camera.</string>
-    <!-- alert to the user that an SD card must be installed before using the camera -->
-    <string name="no_storage" product="default">Please insert an SD card before using the camera.</string>
-
+<!-- alert to the user that an SD card must be installed before using the camera -->
+		<string name="no_storage" product="default">Please insert an SD card before using the camera.</string>
     <!-- alert to the user that the USB storage is too full to complete the operation [CHAR LIMIT=NONE] -->
     <string name="not_enough_space" product="nosdcard">Your USB storage is full.</string>
-    <!-- alert to the user that the SD card is too full to complete the operation -->
-    <string name="not_enough_space" product="default">Your SD card is full.</string>
+	<!-- alert to the user that the SD card is too full to complete the operation -->
+	<string name="not_enough_space" product="default">Your SD card is full.</string>
 
     <!-- alert to the user that the USB storage is being disk-checked [CHAR LIMIT=30] -->
     <string name="preparing_sd" product="nosdcard">Preparing USB storage\u2026</string>
-    <!-- alert to the user that the SD card is being disk-checked -->
-    <string name="preparing_sd" product="default">Preparing SD card\u2026</string>
+	<!-- alert to the user that the SD card is being disk-checked -->
+	<string name="preparing_sd" product="default">Preparing SD card\u2026</string>
 
     <!-- alert to the user that the camera fails to read or write the USB storage. [CHAR LIMIT=NONE] -->
     <string name="access_sd_fail" product="nosdcard">Failed to access USB storage.</string>
-    <!-- alert to the user that the camera fails to read or write the SD card. -->
-    <string name="access_sd_fail" product="default">Fail to access SD card.</string>
+	<!-- alert to the user that the camera fails to read or write the SD card. -->
+	<string name="access_sd_fail" product="default">Fail to access SD card.</string>
 
     <!-- Settings stuff -->
 
@@ -250,6 +275,8 @@
     <!--
          Default picture quality setting. See
          pref_camera_jpegquality_entryvalues for possible values
+
+
     -->
     <string name="pref_camera_jpegquality_default" translatable="false">superfine</string>
 
@@ -399,26 +426,31 @@
     <!--
          Displayed in the title of the dialog for things to do with a picture that
          is to be sent to another application:
+
+
     -->
 
 
     <!--
          Displayed in the title of the dialog for things to do with a picture that
          is to be "set as" (e.g. set as contact photo or set as wallpaper)
+
+
     -->
 
 
     <!--
          Displayed in the title of the dialog for things to do with a video that
          is to be sent to another application.
+
+
     -->
 
 
     <!-- Low-memory dialog message [CHAR LIMT=NONE] -->
     <string name="spaceIsLow_content" product="nosdcard">Your USB storage is running out of space. Change the quality setting or delete some images or other files.</string>
-    <!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
-    <string name="spaceIsLow_content" product="default">Your SD card is running out of space. Change the quality setting or delete some images or other files.</string>
-
+<!-- Low-memory dialog message [CHAR LIMIT=NONE] -->
+	<string name="spaceIsLow_content" product="default">Your SD card is running out of space. Change the quality setting or delete some images or other files.</string>
     <!-- Camera format string for new image files. Passed to java.text.SimpleDateFormat. -->
     <string name="image_file_name_format" translatable="false">"'IMG'_yyyyMMdd_HHmmss"</string>
 
@@ -432,7 +464,6 @@
     <string name="zoom_control_title">Zoom</string>
     <string name="switch_to_camera_lable">Switch to camera</string>
     <string name="switch_to_video_lable">Switch to video</string>
-
     <string name="app_description">This is a sample application for the Android Training class
         &quot;Displaying Bitmaps Efficiently&quot;
         (http://developer.android.com/training/displaying-bitmaps/display-bitmap.html). It is not
@@ -442,7 +473,6 @@
     <string name="clear_cache_complete_toast">Caches have been cleared</string>
     <string name="imageview_description">Image Thumbnail</string>
     <string name="no_network_connection_toast">No network connection found</string>
-    
     <string name="imagesdcardcache_demo_activity_title">ImageSDCardCache Demo</string>
     <string name="imagecache_demo_activity_title">ImageCache Demo</string>
     <string name="dropdownlistview_demo_activity_title">Drop Down And Load More ListView Demo</string>
@@ -455,12 +485,10 @@
     <string name="intent_demo_activity_title">Intent Demo</string>
     <string name="service_demo_activity_title">Service Demo</string>
     <string name="broadcastreceiver_demo_activity_title">BroadcastReceiver Demo</string>
-        
     <string name="send_general_broadcast">send general broadcast</string>
     <string name="send_local_broadcast">send local broadcast</string>
     <string name="send_ordered_broadcast">send ordered broadcast</string>
     <string name="send_sticky_broadcast">send sticky broadcast</string>
-        
     <string name="start_general_service">start general service</string>
     <string name="stop_general_service">stop_general service</string>
     <string name="start_intent_service">start intent service</string>
@@ -470,7 +498,6 @@
     <string name="unbound_service">unbound service</string>
     <string name="start_aidl_service">start aidl service</string>
     <string name="stop_aidl_service">stop aidl service</string>
-    
     <string name="app_status_download">click to download</string>
     <string name="app_status_downloaded">downloaded, click to download again</string>
     <string name="app_status_download_fail">download fail, click to download again</string>
@@ -482,12 +509,9 @@
     <string name="app_status_pause">Pause</string>
     <string name="app_status_downloading">downloading</string>
     <string name="tip_download_file">file will be saved to sdcard, the path is: </string>
-
     <string name="update_at">updated at:&#160;</string>
-    
     <string name="profile">Profile:&#160;</string>
     <string name="description">Description:&#160;</string>
-        
     <string name="desc_search_view">SearchView Desc And Implement Search Tip</string>
     <string name="desc_view_pager_multi_page">Viewpager With Multi Page</string>
     <string name="desc_download_manager">Download Manager Usage</string>
@@ -500,19 +524,14 @@
     <string name="desc_image_cache">ImageCache Usage</string>
     <string name="desc_image_sdcard_cache">ImageSDCardCache Usage</string>
     <string name="desc_default">Trinea</string>
-    
-        <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
+    <string name="drop_down_list_header_default_text">Click to refresh&#8230;</string>
     <string name="drop_down_list_header_pull_text">Drop Down to refresh&#8230;</string>
     <string name="drop_down_list_header_release_text">Release to refresh&#8230;</string>
     <string name="drop_down_list_header_loading_text">Loading&#8230;</string>
     <string name="drop_down_list_footer_default_text">More</string>
     <string name="drop_down_list_footer_loading_text">Loading&#8230;</string>
     <string name="drop_down_list_footer_no_more_text">No More</string>
-    
     <string name="image_content">Image</string>
-    
-    
-  
     <string name="histogram">Histogram</string>
     <string name="grayscale">Grayscale</string>
     <string name="threshhold">Threshold</string>
@@ -521,9 +540,6 @@
     <string name="filter">Filter</string>
     <string name="contour">Contour</string>
     <string name="original">Original</string>
-    
-   
-
     <string name="hello">Hello World, PullToRefreshActivity!</string>
     <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin mauris varius lacus porttitor eget blandit massa facilisis. Nulla pellentesque odio sed purus fermentum vitae viverra orci faucibus. Sed ullamcorper condimentum vulputate. Curabitur sit amet convallis velit. Vestibulum posuere eleifend risus ac adipiscing. Nam pulvinar nulla a velit faucibus imperdiet. Praesent eget nisi ac justo blandit sagittis. Maecenas at leo nisi, nec varius nisl.\nIn hac habitasse platea dictumst. Morbi neque tortor, vestibulum sed viverra a, luctus vel lorem. Nunc turpis eros, varius eget commodo et, euismod at eros. Sed tincidunt mi purus, vel posuere dui. Vestibulum ante lectus, porta sed mattis bibendum, scelerisque cursus sapien. Cras ultrices imperdiet fermentum. Aenean nisi nulla, euismod non blandit ac, dictum quis libero. Morbi consectetur tempor mollis. Suspendisse eget nunc arcu, vel ullamcorper augue. Integer malesuada, diam nec faucibus mollis, nisl velit euismod enim, ac mattis justo neque sit amet mauris. Vivamus pretium imperdiet pharetra.\nInteger sagittis augue sit amet lectus pulvinar sit amet commodo tortor mattis. Maecenas quis tellus eget ante eleifend sollicitudin non et nibh. Maecenas luctus euismod tristique. Fusce in odio nec diam blandit facilisis. Sed nec arcu eros. Vivamus quis tortor a metus tempus aliquam eget volutpat magna. Pellentesque id ultrices dolor. Sed blandit aliquet quam. Phasellus dapibus euismod vulputate. Aenean blandit, elit vitae vestibulum tincidunt, metus dui accumsan nulla, sit amet vehicula mauris lacus in est. Etiam dignissim pellentesque nulla vel malesuada. Cras vel lorem justo.\nSed condimentum nisl sit amet libero vestibulum hendrerit. Duis auctor tempus placerat. Proin velit ante, ornare nec dictum nec, hendrerit eu arcu. Etiam ut diam ornare quam venenatis pulvinar vitae vel leo. Vivamus consectetur, ante id interdum rhoncus, magna eros pulvinar lacus, a gravida nibh arcu vitae eros. Nulla scelerisque laoreet feugiat. Mauris sit amet gravida felis.\nNulla ac dolor sapien, vestibulum venenatis justo. Cras placerat velit vitae nibh pellentesque ultricies. Suspendisse adipiscing enim eu justo iaculis eu pretium urna fermentum. Duis porttitor nunc non nunc mattis vestibulum. Etiam elit tellus, feugiat in bibendum eget, adipiscing nec metus. Ut ut sem lacus, quis faucibus diam. Curabitur a nulla fermentum tortor dignissim posuere. Fusce faucibus ante ut sem imperdiet imperdiet eget vitae lorem. Etiam fringilla ornare ipsum, in sagittis quam ornare vitae. Nullam venenatis orci sit amet sapien adipiscing gravida. Proin turpis lectus, hendrerit vitae vehicula ut, auctor ac lectus. Pellentesque sollicitudin blandit ligula quis commodo. Mauris vulputate lectus in velit luctus aliquam. Quisque eget tincidunt elit. Quisque et augue quam, sed scelerisque eros.</string>
 

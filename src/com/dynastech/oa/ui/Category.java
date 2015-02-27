@@ -75,7 +75,7 @@ public class Category extends BaseActivity {
 					adapter.setData(lzlists, state);
 					adapter.notifyDataSetChanged();
 					if (pagesize < LIMIT) {
-						Toast.makeText(context, "数据加载完成", Toast.LENGTH_SHORT)
+						Toast.makeText(context, R.string.data_complete, Toast.LENGTH_SHORT)
 								.show();
 					}
 				}
@@ -205,7 +205,7 @@ public class Category extends BaseActivity {
 
 						if (item.getReadUrl() != null
 								&& item.getReadUrl().indexOf(".pdf") != -1) {
-							Toast.makeText(context, "不支持打开PDF格式",
+							Toast.makeText(context, R.string.no_support_pdf,
 									Toast.LENGTH_SHORT).show();
 						} else {
 							startActivityForResult(

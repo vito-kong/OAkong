@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alert_recorder"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/recorder_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:text="title"
+        android:textColor="@color/black"
+        android:textSize="14sp" 
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/recorder_title"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/recorder_upload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上传"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:background="#FFFFFF"
+             />
+
+        <Button
+            android:id="@+id/recorder_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textColor="@color/black"
+            android:textSize="12sp" 
+            android:background="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/recorder_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/video_play_btn_nor" />
+
+</RelativeLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/dialog_recorder_upload.xml -->

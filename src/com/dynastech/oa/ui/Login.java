@@ -15,10 +15,10 @@ import com.dynastech.oa.ui.api.ApiClient;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.User;
 import com.dynastech.oa.ui.tasks.LoginTask;
-import com.dynastech.oa.ui.util.StringUtils;
-import com.dynastech.oa.ui.util.UIHelper;
 import com.dynastech.oa.ui.widget.ScrollLayout;
 import com.dynastech.oa.utils.Constants;
+import com.dynastech.oa.utils.StringUtils;
+import com.dynastech.oa.utils.UIHelper;
 import com.dynastech.oa.utils.URLS;
 
 import android.content.Context;

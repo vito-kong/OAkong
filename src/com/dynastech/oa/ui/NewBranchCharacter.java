@@ -30,8 +30,8 @@ import com.dynastech.oa.ui.adapter.NewBranchCharacterAdapter;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.GroupUserBean;
 import com.dynastech.oa.ui.entity.User;
-import com.dynastech.oa.ui.util.JsonUtils;
 import com.dynastech.oa.utils.HttpUtils;
+import com.dynastech.oa.utils.JsonUtils;
 import com.dynastech.oa.utils.URLS;
 import com.google.gson.reflect.TypeToken;
 
@@ -161,7 +161,7 @@ public class NewBranchCharacter extends BaseActivity implements OnClickListener 
 				adapter.notifyDataSetChanged();
 
 			} else {
-				Toast.makeText(context, "数据获取失败", Toast.LENGTH_SHORT).show();
+				Toast.makeText(context, R.string.data_failed, Toast.LENGTH_SHORT).show();
 			}
 		}
 

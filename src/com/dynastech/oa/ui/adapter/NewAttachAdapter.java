@@ -14,11 +14,11 @@ import com.dynastech.oa.ui.ImageCapture;
 import com.dynastech.oa.ui.OnLineWatch;
 import com.dynastech.oa.ui.common.Constant;
 import com.dynastech.oa.ui.entity.Downloader;
-import com.dynastech.oa.ui.util.FileUtils;
-import com.dynastech.oa.ui.util.ToolUtils;
 import com.dynastech.oa.utils.CallOtherOpeanFile;
+import com.dynastech.oa.utils.FileUtils;
 import com.dynastech.oa.utils.HttpUtils;
 import com.dynastech.oa.utils.NetUtils;
+import com.dynastech.oa.utils.ToolUtils;
 import com.dynastech.oa.utils.URLS;
 
 import android.content.Context;

@@ -12,10 +12,10 @@ import com.dynastech.oa.ui.entity.HomeData;
 import com.dynastech.oa.ui.entity.LoginGson;
 import com.dynastech.oa.ui.entity.User;
 import com.dynastech.oa.ui.tasks.MainPageAsynTask;
-import com.dynastech.oa.ui.util.UpdateManager;
 import com.dynastech.oa.ui.widget.ScrollLayout;
 import com.dynastech.oa.ui.widget.ScrollLayout.OnViewChangeListener;
 import com.dynastech.oa.utils.URLS;
+import com.dynastech.oa.utils.UpdateManager;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshGridView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
@@ -226,7 +226,7 @@ public class Main extends BaseActivity {
 						context.startActivity(intent);// 如果使用context启动Act的话需要加FLAG_ACTIVITY_NEW_TASK。
 
 					} catch (ActivityNotFoundException e) {
-						Toast.makeText(context, "找不到lync程序，请下载lync！",
+						Toast.makeText(context, R.string.no_lync,
 								Toast.LENGTH_SHORT).show();
 					}
 
@@ -307,7 +307,7 @@ public class Main extends BaseActivity {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			if ((System.currentTimeMillis() - mExitTime) > 2000) {
 
-				Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, R.string.keydown_double_to_exit, Toast.LENGTH_SHORT).show();
 				mExitTime = System.currentTimeMillis();
 
 			} else {

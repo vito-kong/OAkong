@@ -11,7 +11,9 @@ import com.dynastech.oa.ui.entity.User;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -25,17 +27,19 @@ import android.view.Window;
 import android.webkit.HttpAuthHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class OnLineWatch extends BaseActivity implements OnGestureListener{
+public class OnLineWatch extends BaseActivity implements OnGestureListener {
 
 	private WebView web;
-	private String online_url, title, user, pwd,_category;
+	private String online_url, title, user, pwd, _category;
 	private String tag = "OnLineWatch";
 	private AlertDialog dialog;
 	private Context mContext;
 	private ImageView back;
+	private Button goback_home;
 	private TextView text_title;
 	private User _user;
 	private AppContext appContext;
@@ -43,6 +47,7 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 	private static final int FLING_MIN_VELOCITY = 200;// 移动最大速度
 	private GestureDetector mygesture;
 	private float scale_init;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -50,13 +55,13 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 
 			setContentView(R.layout.online_watch);
 			mContext = this;
-			mygesture = new GestureDetector(this,this);
+			mygesture = new GestureDetector(this, this);
 			dialog = new AlertDialog.Builder(this).create();
 			online_url = getIntent().getStringExtra(Constant._Online_Url);
-			
-			_category=getIntent().getStringExtra(Constant._Category);
-			System.out.println("_category:"+_category);
-			if(online_url==null)
+
+			_category = getIntent().getStringExtra(Constant._Category);
+			System.out.println("_category:" + _category);
+			if (online_url == null)
 				return;
 			online_url = URLDecoder.decode(online_url, "utf-8");
 			appContext = (AppContext) getApplication();
@@ -73,7 +78,16 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 					finish();
 				}
 			});
-		
+			//返回主页按钮
+//			goback_home = (Button) findViewById(R.id.goback_home);
+//			goback_home.setVisibility(View.VISIBLE);
+//			goback_home.setOnClickListener(new OnClickListener() {
+//				
+//				@Override
+//				public void onClick(View arg0) {
+//					// TODO Auto-generated method stub
+//				}
+//			});
 			text_title = (TextView) findViewById(R.id.new_title);
 			text_title.setText(title + "");
 			web.getSettings().setJavaScriptEnabled(true);
@@ -86,10 +100,12 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 			web.getSettings().setUseWideViewPort(true);
 			// web.getSettings().setUserAgentString("Mozilla/5.0(iPad; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B314 Safari/531.21.10");
 			// web.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 7_0_3 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B511");
-//			web.getSettings()
-//					.setUserAgentString(
-//							"Mozilla/5.0 (iPad; CPU OS 6_1_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B146");
-			web.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25");
+			// web.getSettings()
+			// .setUserAgentString(
+			// "Mozilla/5.0 (iPad; CPU OS 6_1_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Mobile/10B146");
+			web.getSettings()
+					.setUserAgentString(
+							"Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10B329 Safari/8536.25");
 			web.requestFocus();
 			web.getSettings().setLoadWithOverviewMode(true);
 			scale_init = web.getScale();
@@ -104,7 +120,7 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 				public void onPageStarted(WebView view, String url,
 						Bitmap favicon) {
 					super.onPageStarted(view, url, favicon);
-					
+
 					if (!((Activity) mContext).isFinishing()) {
 						dialog.show();
 						Window window = dialog.getWindow();
@@ -119,10 +135,10 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 				@Override
 				public void onPageFinished(WebView view, String url) {
 					super.onPageFinished(view, url);
-					if(!"ReportCenter".equals(_category)){
+					if (!"ReportCenter".equals(_category)) {
 						web.loadUrl("javascript:var tables = document.getElementsByTagName('table'); tables[1].style.display='none'");
 					}
-					
+
 					dialog.dismiss();
 				}
 
@@ -130,13 +146,12 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 				public void onReceivedHttpAuthRequest(WebView view,
 						HttpAuthHandler handler, String host, String realm) {
 					// TODO Auto-generated method stub
-					if("Documents".equals(_category)){
+					if ("Documents".equals(_category)) {
 						handler.proceed("dgadmin", "Ad.Dguc.Com");
-					}else{
+					} else {
 						handler.proceed(user, pwd);
 					}
-					
-					
+
 				}
 
 			});
@@ -149,65 +164,76 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 		}
 
 	}
+
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		// TODO Auto-generated method stub
-		if(keyCode==KeyEvent.KEYCODE_BACK){
-			setResult(RESULT_OK);
+		// if(keyCode==KeyEvent.KEYCODE_BACK){
+		// setResult(RESULT_OK);
+		// }
+		if (keyCode == KeyEvent.KEYCODE_BACK && web.canGoBack()) {
+			web.goBack();
 		}
 		return super.onKeyDown(keyCode, event);
 	}
+
 	@Override
 	public boolean onDown(MotionEvent e) {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
 	@Override
 	public void onShowPress(MotionEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
+
 	@Override
 	public boolean onSingleTapUp(MotionEvent e) {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
 	@Override
 	public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX,
 			float distanceY) {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
 	@Override
 	public void onLongPress(MotionEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
+
 	@Override
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
 			float velocityY) {
-				// 向左
-				float scale = web.getScale();
-				if (scale > scale_init)
-					return false;
+		// 向左
+		float scale = web.getScale();
+		if (scale > scale_init)
+			return false;
 
-				if (e2.getX() - e1.getX() > FLING_MIN_DISTANCE
-						&& Math.abs(velocityX) > FLING_MIN_VELOCITY) {
-					Log.i(tag, "right");
-					web.loadUrl("javascript:function go(next){var a = document.querySelector('#defaultform>:nth-child(4)>tbody>tr>td>:nth-child('+ (next ? 4 : 2) + ')');if (a.tagName === 'IMG') {return;}location.href = a.href;};go()");
-				} // 向右
-				if (e1.getX() - e2.getX() > FLING_MIN_DISTANCE
-						&& Math.abs(velocityX) > FLING_MIN_VELOCITY) {
-					Log.i(tag, "left");
-					// web.loadUrl("javascript:function a(){location.href = document.querySelector('#defaultform table a:last-child').href};a();");
-					web.loadUrl("javascript:function go(next){var a = document.querySelector('#defaultform>:nth-child(4)>tbody>tr>td>:nth-child('+ (next ? 4 : 2) + ')');if (a.tagName === 'IMG') {return;}location.href = a.href;};go(true)");
-				}
-				return false;
+		if (e2.getX() - e1.getX() > FLING_MIN_DISTANCE
+				&& Math.abs(velocityX) > FLING_MIN_VELOCITY) {
+			Log.i(tag, "right");
+			web.loadUrl("javascript:function go(next){var a = document.querySelector('#defaultform>:nth-child(4)>tbody>tr>td>:nth-child('+ (next ? 4 : 2) + ')');if (a.tagName === 'IMG') {return;}location.href = a.href;};go()");
+		} // 向右
+		if (e1.getX() - e2.getX() > FLING_MIN_DISTANCE
+				&& Math.abs(velocityX) > FLING_MIN_VELOCITY) {
+			Log.i(tag, "left");
+			// web.loadUrl("javascript:function a(){location.href = document.querySelector('#defaultform table a:last-child').href};a();");
+			web.loadUrl("javascript:function go(next){var a = document.querySelector('#defaultform>:nth-child(4)>tbody>tr>td>:nth-child('+ (next ? 4 : 2) + ')');if (a.tagName === 'IMG') {return;}location.href = a.href;};go(true)");
+		}
+		return false;
 	}
+
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
 		// TODO Auto-generated method stub
-		if(!"ReportCenter".equals(_category)){
+		if (!"ReportCenter".equals(_category)) {
 			web.setOnTouchListener(new OnTouchListener() {
 
 				@Override
@@ -217,7 +243,7 @@ public class OnLineWatch extends BaseActivity implements OnGestureListener{
 				}
 			});
 		}
-		
+
 		return super.dispatchTouchEvent(ev);
 	}
 }

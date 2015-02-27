@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:id="@+id/main_linearlayout_footer"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:background="@drawable/menu_bg">
+    
+    <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		>
+	<Button android:layout_width="53dp"
+            	android:layout_height="53dp"
+            	android:background="@drawable/home"
+            	android:id="@+id/main_footbar_home"
+            	android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    
+     <RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		>
+        <Button android:layout_width="53dp"
+            	android:layout_height="53dp"
+            	android:background="@drawable/information"
+            	android:id="@+id/main_footbar_setting"
+            	android:layout_centerInParent="true"
+            />
+        
+         
+    </RelativeLayout>
+     
+</LinearLayout><!-- From: file:/E:/WorkSpace/OAkong/res/layout/main_footer.xml -->
